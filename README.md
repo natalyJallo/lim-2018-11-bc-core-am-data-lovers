@@ -17,6 +17,31 @@
 
 ## Preámbulo
 
+Nombre de Data  : LEAGUE OF LEGUENDS
+
+ENTREVISTA AL USUARIX  N° 1
+Hola,soy Janet ,¿Cómo estas?,Un gusto conocerte.Cuéntame de donde eres.
+-Mi nombre es katherine Ormeño , soy de lima perú , vivo en magdalena y tengo 21 años
+Cuentame de que trata LOL?
+-Lol lo conocí más por que jugaba dota ,lol es parecido a dota ,  se trata de llegar a la base del contrincante peleas junto a otros usuarios,  osea que es de colaboración.
+Cuentame tu última experiencia Jugando Lol
+-La última vez que jugué lol fue de Support,existen como 3 roles,TOP,MID Y SUPPORT,
+con el personaje de shannon o Usher,uno de los principales cuando te creas
+tu cuenta , pero me acostumbré  a jugar con timo.
+¿Qué característica es la que te llama la atención para escoger un personaje entre tantos?
+-Primero los colores que usaron en las temáticas , no veía mucho las caracteristicas,por que
+me llama la atención lo visual, a la larga me gusta especializarme en un personaje.
+Fuera del diseño , que característica es importante?
+-el ataque y los hechizos que tenga por que es un juego de estratégia
+¿Cual de las partes del proceso te pareció muy tedioso o aburrido?
+-no me pareció nada aburrido pero lo que me tomo tiempo entender los hechizos de cada héroe
+¿Qué  parte del proceso de selección de tu héroe consideras que fue de mucha ayuda?
+bueno , cuando escoges un personaje aparece un mapa de sus skills (habilidades)
+¿Cuánto tiempo te tomó hacer la elección de tu campeón?
+demoró dentro de 5 a 10 min
+[Usuaria 1 ](hC:\Users\Laboratoria\Documents\Proyectos\lim-2018-11-bc-core-am-data-lovers\src\imagenes\USUARIA1.png)
+
+
 Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
 Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
