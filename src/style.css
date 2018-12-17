@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+body{
+  font-family:'ZCOOL QingKe HuangYou', cursive;
+}
+.img-fondo
+{
+  width: 200px; height: 200px;
+}
+.section-left{
+  color: black;
+  width: 100%;
+  height: 60%;
+}
+.container-top{
+background-image: url("https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c4/Dominion.jpg/revision/latest?cb=20110804135021");
+background-color: black;
+padding :50px 50px 50px 20px ;
+
+}
+.show-champions{
+  margin-top: 0%;
+  box-sizing: border-box;
+
+}
