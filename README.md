@@ -17,7 +17,7 @@
 
 ## Preámbulo
 
-Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
+Según un [estudio de IBM](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8CUFzwWUBjd366wui2omK4HugDBIahAXUYKpQT3FptUZfc345Q),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
 Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
 
