@@ -40,7 +40,7 @@ me llama la atención lo visual, a la larga me gusta especializarme en un person
 8. ¿Cuánto tiempo te tomó hacer la elección de tu campeón?
 demoró dentro de 5 a 10 min
 
-![Usuaria](C:\Users\Laboratoria\Documents\Proyectos\lim-2018-11-bc-core-am-data-lovers\src\imagenes\USUARIA1.png)
+![Usuaria](https://github.com/JanetGM/lim-2018-11-bc-core-am-data-lovers/tree/developmentJG\src\imagenes\USUARIA1.png)
 
 
 Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
