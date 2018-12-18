@@ -1,6 +1,6 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
-window.example = {
+/*window.example = {
   filterAttack : (array) => {
     let newArrayNameAttack=[];
     for (let i = 0; i < 2; i++) {
@@ -19,3 +19,4 @@ window.example = {
     }
   }
 };
+*/
