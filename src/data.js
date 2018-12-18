@@ -3,23 +3,19 @@
 window.example = {
   filterAttack : (array) => {
     let newArrayNameAttack=[];
-    let templateList='';
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < 2; i++) {
       const nameArray = array[i];
       const championAttack = (nameArray.stats.attackdamage);
       const championImage = (nameArray.img);
       const name=(nameArray.name);
       newArrayNameAttack= name;
-      function listar(name,championAttack,championImage) {
-          this.name = name;
-          this.championAttack = championAttack;
-          this.championImage = championImage;
-        }
-      listar(name,championAttack,championImage);
       const li =`
-      <li>${name}</li>
-      <li>${championAttack}</li>
-      <img src="${championImage}">`
+      <div class="blog-card">
+      <img src="${championImage}"><br>
+      <label>${name}</label><br>
+      <label>${championAttack}</label>
+      </div>`
       templateList +=li;
     }
+  }
 };
