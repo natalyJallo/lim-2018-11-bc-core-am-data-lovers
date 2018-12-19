@@ -160,10 +160,7 @@ padding :50px 50px 50px 20px ;
 .menu-bar:checked ~ .menu {
   transform: translateX(0%);
 }
-/*Diseño y estilo para aside de la pagina*/
-.main {
 
-}
 .info-filter {
   height: 100%;
   width: 400px;
@@ -228,7 +225,7 @@ padding :50px 50px 50px 20px ;
 }
 .link-share {
   display: block;
-  padding top: 15px;
+  padding-top:15px;
   width: 230px;
 }
 .link-count {
@@ -237,10 +234,6 @@ padding :50px 50px 50px 20px ;
   text-decoration: none;
   padding: 15px 25px;
   width: 70px;
-}
-/*Estilo de la seccion y texto de la primera pagina*/
-.box-text {
-
 }
 .text-2{
   font-family: 'Open Sans', sans-serif;
@@ -342,7 +335,7 @@ padding :50px 50px 50px 20px ;
   font-family:Open Sans ;
   text-align: center;
 }
-}
+
 .container-list{
   display: inline-table;
   background-color: #EEA730;
@@ -436,4 +429,3 @@ padding :50px 50px 50px 20px ;
     width: 100px;
   }
 }
->>>>>>> 7f121b9461d9b16e348c53dcd0fd025badbd0d59

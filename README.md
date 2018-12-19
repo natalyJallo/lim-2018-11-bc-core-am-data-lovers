@@ -29,7 +29,7 @@
 ## Historia de Usuario
 
 Nombre de Data  : LEAGUE OF LEGUENDS
-# ENTREVISTA AL USUARIX  N° 1
+# ENTREVISTA AL USUARIO 
 1. Hola,soy Janet ,¿Cómo estas?,Un gusto conocerte.Cuéntame de donde eres.
 
 - Mi nombre es katherine Ormeño , soy de lima perú , vivo en        magdalena y tengo 21 años
