@@ -9,12 +9,9 @@
 
 ## Planificación
 - Uso del tablero canvas -Para la creación de las historias de usuarios
-
-
-
 ## Data Escogida  :  League of Leguends
 ![data](http://www.pngall.com/wp-content/uploads/2016/05/League-of-Legends-PNG-Images.png)
-    
+
 ### ¿Qué es League of legends?
 
 * League of Legends es un juego competitivo en línea de ritmo frenético, que fusiona la velocidad y la intensidad de la estrategia en tiempo real (ETR) con elementos de juegos de rol. Dos equipos de poderosos campeones, cada uno con un diseño y estilo de juegos únicos, compiten cara a cara a través de diversos campos de batalla y modos de juego. Con un plantel de campeones en constante expansión, actualizaciones frecuentes y un emocionante panorama competitivo, League of Legends ofrece posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad.
@@ -23,13 +20,13 @@
 
 ## Campeones
 
-* La data a manipular de league of legends tiene gran cantidad de informacion pero sólo de los campeones , desde su tipo de campeon como cada uno de sus poderes , por eso como equipo vimos la data como un catalogo pero de campeones . 
+* La data a manipular de league of legends tiene gran cantidad de informacion pero sólo de los campeones , desde su tipo de campeon como cada uno de sus poderes , por eso como equipo vimos la data como un catalogo pero de campeones .
 ---
 
 ## Historia de Usuario
 
 Nombre de Data  : LEAGUE OF LEGUENDS
-# ENTREVISTA AL USUARIO 
+# ENTREVISTA AL USUARIO
 1. Hola,soy Janet ,¿Cómo estas?,Un gusto conocerte.Cuéntame de donde eres.
 
 - Mi nombre es katherine Ormeño , soy de lima perú , vivo en        magdalena y tengo 21 años
@@ -53,12 +50,12 @@ demoró dentro de 5 a 10 min
 
 De esta entrevista realizada a la señorita Katherine obtuvimos nuestro primera historia de usuario :
 
-- El usuario quiere que se le muestre los campeones más poderosos para así tener más probabilidad de ganar la partida. 
+- El usuario quiere que se le muestre los campeones más poderosos para así tener más probabilidad de ganar la partida.
 - El usuario quiere que se muestren todos los campeones existentes
 por rol para saber que campeón usar .
 - El usuario quiere visualizar los 10 mejores campeones de cada rol para escoger más rapido y tener más probabilidad de ganar.
 
---- 
+---
 ## Checklist
 
 * [ ] Usa VanillaJS.
