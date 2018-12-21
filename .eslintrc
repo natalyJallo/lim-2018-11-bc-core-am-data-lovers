@@ -7,6 +7,7 @@
   },
   "extends": "eslint:recommended",
   "globals": {
-    "example": false
+    "lol": false,
+    "LOL":false
   }
 }
