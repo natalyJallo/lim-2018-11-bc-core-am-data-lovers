@@ -7,36 +7,48 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body class="second-page">
+  <body class="thirst-page">
     <header class="first-header">
         <img src="imagenes/logo2.png" alt="" class="logo1">
         <input class="menu-bar" type="checkbox" id="menu-bar">
-        <label class="icon-menu-2" for="menu-bar"><img src="imagenes/boton-de-menu.png" alt="" class="img-menu"></label>
+        <label class="icon-menu" for="menu-bar"><img src="imagenes/boton-de-menu.png" alt="" class="img-menu"></label>
         <nav class="menu-nav">
           <ul class="menu-ul">
-            <li><a class="link-menu" href="index.html">Inicio</a></li>
-            <li><a class="link-menu" href="index3.html">Campeones</a></li>
-            <li><a class="link-menu" href="index2.html">Top Team</a></li>
+            <li class="li-menu"><a class="link-menu" href="index.html">Inicio</a></li>
+            <li class="li-menu"><a class="link-menu" href="index2.html">Campeones</a></li>
+            <li class="li-menu"><a class="link-menu" href="index3.html">Top Ten</a>
+              <ul class="menu-ul-2">
+                <li><a class="link-menu" href="#section-top-rol" id="rol-filter">Roles</a></li>
+                <li><a class="link-menu" href="#characteristic-filter">Caracteristicas</a></li>
+                <li><a class="link-menu" href="#specific-filter">Datos</a></li>
+              </ul>
+            </li>
             <li><a class="link-menu" href="#">Modo de juego</a></li>
             <li><input type="text" id="search" class="box-search"><label for="search" class="label-search"></label><a class="link-share" href=""><img src="imagenes/buscador.png" alt="" class="img-search"></a></li>
             <li><a class="link-count" href=""><img src="imagenes/boton-cuenta.png" alt="" class="img-count"></a></li>
           </ul>
         </nav>
     </header>
-    <section class="section-champions" id="section-champions">
-      <div class="">
-        <h2 class="text-4">CAMPEONES DE LEAGUE OF LEGEND</h2>
-        <h3></h3>
-        
-      </div>
-      <div class="box-show-champions" id="list-champions">
-        <h2 class="text-4">Lista de campeones</h2>
-        <div class="nav-order">
-          <select class="filter-box" id="order-champions">
-            <option>Orden</option>
-            <option value="Desc">A-Z</option>
-            <option value="Asc">Z-A</option>
-          </select>
+    <section class="section-top" id="section-top-rol" >
+      <div class="box-2" id="box-2">
+        <h2 class="text-5">Filtrado de campeones</h2>
+        <nav class="filter-rols">
+          <input type="checkbox" id="carry-ad" class="checkbox">
+          <label for="carry-ad" class="label">Tirador</label>
+          <input type="checkbox" id="support" class="checkbox">
+          <label for="support" class="label">Apoyo</label>
+          <input type="checkbox" id="carry-ap" class="checkbox">
+          <label for="carry-ap" class="label">Mago</label>
+          <input type="checkbox" id="tank" class="checkbox">
+          <label for="tank" class="label">Tanque</label>
+          <input type="checkbox" id="figther" class="checkbox">
+          <label for="figther" class="label">Luchador</label>
+          <input type="checkbox" id="assassin" class="checkbox">
+          <label for="assassin" class="label">Asesino</label>
+        </nav>
+        <div class="box-filter" id="champions">
+
+        </div>
       </div>
     </section>
     <script src="data/lol/lol.js"></script>
