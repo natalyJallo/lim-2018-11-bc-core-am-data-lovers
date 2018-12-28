@@ -5,102 +5,42 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <meta name="viewport" content="wide=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="second-page">
-    <div class="">
-      <header>
-        <div class="dropdown-menu">
-            <h2 class="text"><img src="imagenes/LOL-logo.png" class="logo-lol" alt="logo de liga de campeones">TOP TEAM</h2>
-            <input class="menu-bar" type="checkbox" id="menu-bar">
-            <label class="icon-menu" for="menu-bar">
-              <img src="imagenes/boton-de-menu.png" alt="" class="img-menu-2">
-            </label>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Roles</a></li>
-              <li><a href="#">Caracteristicas Generales</a></li>
-              <li><a href="#">Datos especificos</a></li>
-            </ul>
-          </nav>
+    <header class="first-header">
+        <img src="imagenes/logo2.png" alt="" class="logo1">
+        <input class="menu-bar" type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"><img src="imagenes/boton-de-menu.png" alt="" class="img-menu"></label>
+        <nav class="menu-nav">
+          <ul class="menu-ul">
+            <li class="li-menu"><a class="link-menu" href="index.html">Inicio</a></li>
+            <li class="li-menu"><a class="link-menu" href="index2.html">Campeones</a></li>
+            <li class="li-menu"><a class="link-menu" href="index3.html">Top Ten</a>
+              <ul class="menu-ul-2">
+                <li><a class="link-menu" href="#rol-filter" id="rol-filter">Roles</a></li>
+                <li><a class="link-menu" href="#characteristic-filter">Caracteristicas</a></li>
+                <li><a class="link-menu" href="#specific-filter">Datos</a></li>
+              </ul>
+            </li>
+            <li><a class="link-menu" href="#">Modo de juego</a></li>
+            <li><input type="text" id="search" class="box-search"><label for="search" class="label-search"></label><a class="link-share" href=""><img src="imagenes/buscador.png" alt="" class="img-search"></a></li>
+            <li><a class="link-count" href=""><img src="imagenes/boton-cuenta.png" alt="" class="img-count"></a></li>
+          </ul>
+        </nav>
+    </header>
+    <section class="section-champions" id="section-champions">
+        <h2 class="text-4">LISTA DE CAMPEONES</h2>
+        <h3 class="text-5">En esta lista conoceras todos los campeones con sus respectivos nombres y titulos</h3>
+        <div class="nav-order">
+          <select class="filter-list" id="order-champions">
+            <option value="00">A-Z</option>
+            <option value="01">Z-A</option>
+          </select>
+        <div class="" id="list-champions" >
         </div>
-      </header>
-      <section class="main">
-          <aside class="info-filter">
-            <div class="filter-box-general" id="menu-left">
-              <nav class="filter-menu">
-                <div class="filter">
-                  <h3 class="thirst-header">Rango de ataque</h3>
-                  <button type="button" id="attack-range">Ataque</button>
-                  <select class="filter-box" id="attack-option">
-                    <option>Por ataque</option>
-                    <option value="Hight">Alto</option>
-                    <option value="Medium">Medio</option>
-                    <option value="low">Bajo</option>
-                  </select>
-                </div>
-                <div class="filter">
-                  <h3 class="thirst-header">Rango de defensa</h3>
-                  <select class="filter-box" id="defense-range">
-                    <option value="Hight">Alto</option>
-                    <option value="Medium">Medio</option>
-                    <option value="low">Bajo</option>
-                  </select>
-                </div>
-                <div class="filter">
-                  <h3 class="thirst-header">Rango de magia</h3>
-                  <select class="filter-box" id="magic-range">
-                    <option value="Hight">Alto</option>
-                    <option value="Medium">Medio</option>
-                    <option value="low">Bajo</option>
-                  </select>
-                </div>
-                <div class="filter">
-                  <h3 class="thirst-header">Rango de dificultad</h3>
-                  <select class="filter-box" id="difficulty-range">
-                    <option value="Hight">Alto</option>
-                    <option value="Medium">Medio</option>
-                    <option value="low">Bajo</option>
-                  </select>
-                </div>
-              </nav>
-            </div>
-          </aside>
-        <section>
-          <div class="logo-header">
-            <img src="imagenes/logo2.png" class="logo2" alt="">
-          </div>
-          <div id="container-list">
-          </div>
-          <div class="data-filter" id="data-filter">
-            <h3>por ataque</h3>
-
-          </div>
-
-
-
-        </section>
-      </section>
-    </div>
-
-
-
-
-
-<!---<header>
-    <section>
-
+        </div>
     </section>
-    <div id="root"></div>
-    <h1>Hola Nataly probando los cambios</h1>
-    <button id="btn-attack" type="button" name="button">Lista de ataque</button>
-    <button id="btn-magic" type="button" name="button">Lista de magia</button>
-    <button id="btn-difficulty" type="button" name="button">Lista de dificultad</button>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
     <script src="data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
