@@ -1,5 +1,432 @@
-.blog-card
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+body{
+  font-family:'ZCOOL QingKe HuangYou', cursive;
+}
+.img-fondo
 {
-    display:block;
+  width: 200px; height: 200px;
+}
+.section-left{
+  color: black;
+  width: 100%;
+  height: 60%;
+}
+.container-top{
+background-image: url("https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c4/Dominion.jpg/revision/latest?cb=20110804135021");
+background-color: black;
+padding :50px 50px 50px 20px ;
+
+}
+.show-champions{
+  margin-top: 0%;
+  box-sizing: border-box;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Diseño de fondo de body*/
+.second-page{
+  background-image: url("imagenes/fondo1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.first-page {
+  width: 100%;
+  height: 100%;
+}
+/*Diseño de encabezado de header*/
+.first-header {
+  width: 100%;
+  height: 185px;
+  background: #252222;
+  text-align: center;
+}
+.welcome-section {
+  background-image: url("imagenes/campeonfinal.jpg");
+  background-position: center;
+  background-size: cover;
+}
+/*Estilo para el logo de lol*/
+.logo1 {
+  width: 200px;
+  height: 100px;
+  margin-top: 20px;
+}
+/*Estilo para iconos de busqueda y cuenta*/
+.img-search{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: 17px;
+  margin-right: 15px;
+}
+.box-search {
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 6px;
+  height: 25px;
+}
+.img-count {
+  width: 20px;
+  height: 20px;
+}
+/*Estilo para iconos de menu*/
+.img-menu{
+  width: 20px;
+  height: 20px;
+}
+.img-menu-2 {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 20px;
+}
+/*Estilo del div dentro del header*/
+.dropdown-menu {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 65px;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  display: table;
+  background: #252222;
+  position: fixed;
+  z-index: 100;
+  color: #C9AA71;
+  padding-top: 20px;
+}
+/*Estilo para el segundo encabezado de la pagina de top team*/
+.text {
+  float: left;
+  width: 300px;
+  padding-left: 20px;
+}
+/*Estilo para el input de la barra de navegacion de top team*/
+.menu-bar {
+   display: none;
+}
+/*Estilo para el label de los inputs*/
+.icon-menu{
+    cursor: pointer;
+    font-size: 30px;
+    margin: 4px 0;
+}
+.icon-menu-2 {
+  display: none;
+  width: 60px;
+  height: 50px;
+  padding: 10px 10px;
+}
+.icon-menu-2:hover {
+  cursor: pointer;
+  background:  rgba(0, 0, 0, 0.3);
+}
+/*Estilo para la imagen de logo de lol de la segunda pagina*/
+.logo-lol {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+/*Diseño, estilo y animacion del menu que aparece y desaparece de top team*/
+.menu {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(51, 51, 51, 0.8);
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+.menu a {
+  display: block;
+  color: #ffff;
+  height: 70px;
+  text-decoration: none;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+}
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.menu-bar:checked ~ .menu {
+  transform: translateX(0%);
+}
+
+.info-filter {
+  height: 100%;
+  width: 400px;
+}
+.filter-box-general {
+  float: left;
+  width: 230px;
+  height: 100%;
+  background: #252222;
+  padding-top: 50px;
+}
+.filter-menu {
+  margin-top: 40px;
+  height: 100%;
+  padding-left: 20px;
+}
+.filter {
+  height: 120px;
+  text-align: center;
+}
+.thirst-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #C9AA71;
+}
+.filter-box {
+  margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+}
+/*Diseño y estilo para la seccion de mostrar los filtros de top team*/
+.logo-header {
+  height: 100%;
+  width: 100%;
+}
+.logo2 {
+  width: 300px;
+  height: 150px;
+  margin-left: 300px;
+  margin-top: 90px;
+}
+/*Estilo para la barra de navegacion de la primera pagina*/
+.menu-ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.menu-ul li:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+/*Estilo de a de los li de la barra de navegacion de la primera pagina*/
+.link-menu {
+  display: block;
+  padding: 15px 30px;
+  color: #ffff;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+.link-share {
+  display: block;
+  padding-top:15px;
+  width: 230px;
+}
+.link-count {
+  display: block;
+  color: #ffff;
+  text-decoration: none;
+  padding: 15px 25px;
+  width: 70px;
+}
+.text-2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  padding-left: 80px;
+  padding-top: 80px;
+  color: #EEA730;
+}
+.text-3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  width: 400px;
+  height: 300px;
+  padding-left: 60px;
+  padding-top: 30px;
+  color: #FEFEFE;
+}
+/*Estilo de clase para nav*/
+.menu-nav {
+  display: block;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.8);
+}
+/*menu responsive*/
+@media (max-width:770px) {
+  .first-header {
+    width: 100%;
+    height: 100px;
+    background: #252222;
     text-align: center;
+  }
+  .icon-menu-2 {
+    display: block;
+  }
+  .menu-nav {
+    margin-top: 50px;
+    display: block;
+    position: absolute;
+    background: #252222;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    background: rgba(51, 51, 51, 0.8);
+  }
+  .menu-ul {
+    flex-direction: column;
+  }
+  .menu-bar:checked ~ .menu-nav {
+    transform: translateX(0%);
+  }
+  .link-menu {
+    display: block;
+    padding: 25px 30px;
+    color: #ffff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+  .box-search {
+    float: left;
+    margin-top: 15px;
+    margin-left: 300px;
+    border-radius: 6px;
+    height: 25px;
+    margin-right: 0;
+  }
+  .label-search {
+    float: right;
+    display: block;
+  }
+  .link-share {
+    display: block;
+    padding: 25px 30px;
+    width: 230px;
+  }
+  .link-count {
+    display: block;
+    color: #ffff;
+    text-decoration: none;
+    padding: 25px 30px;
+    width: 70px;
+  }
+}
+.blog-card{
+  display: inline-table;
+  background: #fff;
+  box-shadow: 0rem 5rem 20rem 1.5rem rgba(0, 0, 2, 0.2);
+  width: 150px;
+  height: 150px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  font-family:Open Sans ;
+  text-align: center;
+}
+
+.container-list{
+  display: block;
+  background-color: #EEA730;
+}
+@media (max-width:872px){
+  .first-header {
+    width: 100%;
+    height: 220px;
+    background: #252222;
+    text-align: center;
+  }
+}
+@media (max-width:950px){
+  .first-header {
+    width: 100%;
+    height: 180px;
+    background: #252222;
+    text-align: center;
+  }
+}
+/*Estilo para la pantalla de celulares de 440px de ancho */
+@media (max-width:420px) {
+  .welcome-section {
+    background-image: url("imagenes/campeonfinal.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .text-2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    padding-left: 40px;
+    padding-top: 80px;
+    color: #EEA730;
+  }
+  .text-3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    width: 220px;
+    height: 300px;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: #FEFEFE;
+  }
+  .menu-nav {
+    display: block;
+    position: absolute;
+    top: 130px;
+    padding-top: 0px;
+    left: 0;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.8);
+  }
+  .link-menu {
+    display: block;
+    padding: 25px 30px;
+    color: #ffff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+  .box-search {
+    float: left;
+    margin-top: 15px;
+    margin-left: 70px;
+    border-radius: 6px;
+    height: 25px;
+    margin-right: 0;
+  }
+  .label-search {
+    float: right;
+    display: block;
+  }
+  .img-search{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+  }
+  .link-share {
+    display: block;
+    color: #ffff;
+    text-decoration: none;
+    padding: 25px 30px;
+  }
+  .link-count {
+    display: block;
+    color: #ffff;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 50%;
+    width: 100px;
+  }
 }
