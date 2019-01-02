@@ -32,10 +32,12 @@
     "indent": [1, 2],
     "no-array-constructor": 1,
     "no-const-assign": "error",
-    "no-var": "error"
+    "no-var": "error",
+    "no-console":0
  },
   "extends": "eslint:recommended",
   "globals": {
-    "example": false
+    "lol": false,
+    "LOL":false
   }
 }
