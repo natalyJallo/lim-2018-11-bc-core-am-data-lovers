@@ -11,7 +11,7 @@
     "global-require": 0,
     "keyword-spacing": 1,
     "space-before-function-paren": [1, "never"],
-    "arrow-spacing":  ["error", { "before": true, "after": true }],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
     "eqeqeq": 1,
     "space-infix-ops": 1,
     "comma-spacing": 1,
