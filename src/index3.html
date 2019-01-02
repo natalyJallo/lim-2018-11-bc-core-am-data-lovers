@@ -15,12 +15,12 @@
         <nav class="menu-nav">
           <ul class="menu-ul">
             <li class="li-menu"><a class="link-menu" href="index.html">Inicio</a></li>
-            <li class="li-menu"><a class="link-menu" href="index2.html">Campeones</a></li>
-            <li class="li-menu"><a class="link-menu" href="index3.html">Top Ten</a>
+            <li class="li-menu"><a class="link-menu" href="index2.html">Top Ten</a></li>
+            <li class="li-menu"><a class="link-menu" href="index3.html">Campeones</a>
               <ul class="menu-ul-2">
-                <li><a class="link-menu" href="#section-top-rol" id="rol-filter">Roles</a></li>
-                <li><a class="link-menu" href="#characteristic-filter">Caracteristicas</a></li>
-                <li><a class="link-menu" href="#specific-filter">Datos</a></li>
+                <li><a class="link-menu" href="#section-champions" id="rol-filter">Orden</a></li>
+                <li><a class="link-menu" href="#section-top-rol">Roles</a></li>
+                <li><a class="link-menu" href="#section-characteristic">Estadisticas</a></li>
               </ul>
             </li>
             <li><a class="link-menu" href="#">Modo de juego</a></li>
@@ -29,22 +29,45 @@
           </ul>
         </nav>
     </header>
-    <section class="section-top" id="section-top-rol" >
+    <section>
+      <h2>CAMPEONES DE LEAGUE OF LEAGUE</h2>
+      <p>League of Legends cuenta con un plantel de 
+        campeones en constante crecimiento, cada uno
+         con un diseño y un estilo de juego únicos.
+          Aquí podrás ver el plantel actual y conocer 
+          más detalles sobre los personajes que te 
+          interesen.</p>
+    </section>
+    <section class="section-champions" id="section-champions">
+        <h2 class="text-4">LISTA DE CAMPEONES</h2>
+        <h3 class="text-5">En esta lista conoceras todos los campeones con sus respectivos nombres y titulos</h3>
+        <div class="nav-order">
+          <select class="filter-list" id="order-champions">
+            <option value="00">A-Z</option>
+            <option value="01">Z-A</option>
+          </select>
+          <div class="" id="list-champions" >
+          </div>
+        </div>
+    </section>
+    <section class="section-top-rol" id="section-top-rol" >
       <div class="box-2" id="box-2">
         <h2 class="text-5">Filtrado de campeones</h2>
         <nav class="filter-rols">
-          <input type="checkbox" id="carry-ad" class="checkbox">
-          <label for="carry-ad" class="label">Tirador</label>
-          <input type="checkbox" id="support" class="checkbox">
-          <label for="support" class="label">Apoyo</label>
-          <input type="checkbox" id="carry-ap" class="checkbox">
-          <label for="carry-ap" class="label">Mago</label>
-          <input type="checkbox" id="tank" class="checkbox">
-          <label for="tank" class="label">Tanque</label>
-          <input type="checkbox" id="figther" class="checkbox">
-          <label for="figther" class="label">Luchador</label>
-          <input type="checkbox" id="assassin" class="checkbox">
-          <label for="assassin" class="label">Asesino</label>
+          <form class="" action="index.html" method="post">
+            <input type="checkbox" id="carry-ad" class="checkbox">
+            <label for="carry-ad" class="label">Tirador</label>
+            <input type="checkbox" id="support" class="checkbox">
+            <label for="support" class="label">Apoyo</label>
+            <input type="checkbox" id="carry-ap" class="checkbox">
+            <label for="carry-ap" class="label">Mago</label>
+            <input type="checkbox" id="tank" class="checkbox">
+            <label for="tank" class="label">Tanque</label>
+            <input type="checkbox" id="figther" class="checkbox">
+            <label for="figther" class="label">Luchador</label>
+            <input type="checkbox" id="assassin" class="checkbox">
+            <label for="assassin" class="label">Asesino</label>
+          </form>
         </nav>
         <div class="box-filter" id="champions">
 

@@ -27,6 +27,8 @@
   height: 185px;
   background: #252222;
   text-align: center;
+  position: fixed;
+  
 }
 .logo1 {
   width: 200px;
@@ -104,7 +106,7 @@
 }
 .link-share {
   display: block;
-  padding top: 15px;
+  padding-top: 15px;
   width: 230px;
 }
 .img-search{
@@ -133,22 +135,40 @@
 }
 /*SECCIONES DE LAS PAGINAS*/
 .section-welcome {
+  padding-top: 150px;
   display: block;
   background-image: url("imagenes/campeonfinal.jpg");
   background-size: cover;
 }
 .section-champions {
+  padding-top: 100px;
   display: block;
   background-image: url("imagenes/fondo3.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
-.section-top {
+.section-topten {
   display: block;
   background-image: url("imagenes/fondo4.jpg");
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 50px;
+  padding-top: 300px;
+}
+.section-top-rol {
+  display: none;
+}
+.show-topten {
+  width: 90%;
+  height: 100%;
+  display: block;
+  background-color: red;
+}
+.box-1 {
+  width: 90%;
+  height: 550px;
+  background-color: rgba(41, 38, 29,0.6);
+  margin: auto;
+  border: solid 1px rgb(141, 110, 19);
 }
 .box-2 {
   width: 90%;
@@ -196,7 +216,7 @@
   width: 400px;
   height: 300px;
   padding-left: 60px;
-  padding-top: 30px;
+  padding-top: 70px;
   color: #FEFEFE;
   padding-bottom: 30px;
 }
@@ -215,6 +235,17 @@
   text-align: center;
   padding-top: 30px;
   font-size: 25px;
+}
+.text-6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  width: 80%;
+  height: 100px;
+  padding-left: 60px;
+  color: #FFC300;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 /*Esilo y diseño de la seccion que muestra los campeones*/
 .nav-order {
@@ -270,13 +301,13 @@
   text-align: center;
 }
 .characteristic-filter {
-  /*display: none;*/
+  display: none;
 }
 .specific-filter {
-  /*display: none;*/
+  display: none;
 }
 .nav-filter-rol {
-
+ display: block;
 }
 .rol {
   margin-right: 10px;
