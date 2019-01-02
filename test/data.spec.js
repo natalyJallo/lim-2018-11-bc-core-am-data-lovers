@@ -28,25 +28,49 @@ const input2 = [
   { name: 'Irelia', stats: { attackdamage: 61.544 }, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Irelia.png' },
   { name: 'Blitzcrank', stats: { attackdamage: 61.54 }, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png' } 
 ];
-const output2 =
-  [{ name: 'Maokai', attackdamage: 63.544, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png' },
-    { name: 'Kalista', attackdamage: 63, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Kalista.png' },
-    { name: 'Warwick', attackdamage: 62.43, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Warwick.png' },
-    { name: 'Singed', attackdamage: 62.32, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Singed.png' },
-    { name: 'Camille', attackdamage: 62, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Camille.png' },
-    { name: 'Malphite', attackdamage: 61.97, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Malphite.png' },
-    { name: 'Jax', attackdamage: 61.97, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Jax.png' },
-    { name: 'Galio', attackdamage: 61.97, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Galio.png' },
-    { name: 'Irelia', attackdamage: 61.544, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Irelia.png' },
-    { name: 'Blitzcrank', attackdamage: 61.54, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png' }
-  ];
-describe('lol', () => {
+const output2 = [{ name: 'Maokai', attackdamage: 63.544, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png' },
+  { name: 'Kalista', attackdamage: 63, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Kalista.png' },
+  { name: 'Warwick', attackdamage: 62.43, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Warwick.png' },
+  { name: 'Singed', attackdamage: 62.32, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Singed.png' },
+  { name: 'Camille', attackdamage: 62, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Camille.png' },
+  { name: 'Malphite', attackdamage: 61.97, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Malphite.png' },
+  { name: 'Jax', attackdamage: 61.97, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Jax.png' },
+  { name: 'Galio', attackdamage: 61.97, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Galio.png' },
+  { name: 'Irelia', attackdamage: 61.544, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Irelia.png' },
+  { name: 'Blitzcrank', attackdamage: 61.54, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png' }
+];
+
+const input3 = [{ name: 'Aatrox', tags: ['Fighter', 'Tank'], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png' },
+  { name: 'Kalista', tags: ['Marksman'], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Kalista.png' },
+  { name: 'Warwick', tags: ["Fighter", "Tank"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Warwick.png' },
+  { name: 'Singed',tags: ["Tank", "Fighter"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Singed.png' },
+  { name: 'Camille', tags:["Fighter", "Tank"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Camille.png' },
+  { name: 'Malphite', tags:["Tank", "Fighter"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Malphite.png' },
+  { name: 'Jax', tags: ["Fighter", "Assassin"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Jax.png' },
+  { name: 'Galio', tags:["Tank", "Mage"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Galio.png' },
+  { name: 'Irelia', tags:["Fighter", "Assassin"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Irelia.png' },
+  { name: 'Blitzcrank', tags:["Tank", "Fighter"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png' }
+];
+
+const output3=[{ name: 'Aatrox', tags: ['Fighter', 'Tank'], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png' },
+{ name: 'Warwick', tags: ["Fighter", "Tank"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Warwick.png' },
+{ name: 'Singed',tags: ["Tank", "Fighter"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Singed.png' },
+{ name: 'Camille', tags:["Fighter", "Tank"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Camille.png' },
+{ name: 'Malphite', tags:["Tank", "Fighter"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Malphite.png' },
+{ name: 'Galio', tags:["Tank", "Mage"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Galio.png' },
+{ name: 'Blitzcrank', tags:["Tank", "Fighter"], img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png' }
+];
+
+  describe('lol', () => {
   it('debería ser un objeto', () => {
     expect(typeof lol).toBe('object');
   });
   describe('lol.filterType', () => {
     it('is a function', () => {
       expect(typeof lol.filterType).toBe('function');
+    });
+    it('deberia retornar un array de objetos de un mismo tipo', () => {
+      expect(lol.filterType(input3, 'Tank')).toEqual(output3);
     });
   });
   describe('lol.sortData', () => {
