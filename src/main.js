@@ -22,20 +22,21 @@ sortBy.addEventListener('change', () => {
   templateListChampions(window.data.sortData(array, parseInt(listenSortBy[0]), parseInt(listenSortBy[1])));
 });
 
-const marksman = document.getElementById('Marksman').value;
-const valuesCheckBox = document.getElementsByTagName('checkbox');
-const fuctionFilterCarry = lol.filterType(array, marksman); 
-eventMarksman.addEventListener('change', () => {
-  let championsList2 = '';
-  fuctionFilterCarry.forEach((array) => {
-    const templateList2 =
-          `<div class='>
-          <img src="${array.img}"><br>
-          <h2>${array.name}</h2><br>
-          <h3>${array.title}</h3><br>
-          </div> `;
-    championsList2 += templateList2;
-  });
-  document.getElementById('champions').innerHTML = championsList2;
-});
+const valuesCheckBox = document.getElementsByClassName('checkbox');
+const checkbox = Object.values(valuesCheckBox);
+const tagChoices = [];
+checkbox.forEach(tag => {
+  tag.addEventListener('change', () => {
+    if (tag.checked === true) {
+      tagChoices.push(tag.value)
+    }
+    else {
+      let element = tagChoices.indexOf(tag.value);
+      tagChoices.splice(element,1);
+      templateListChampions(array);
+    }
+    const fuctionFilter = lol.filterType(array, tagChoices);
+    document.getElementById('champions').innerHTML = fuctionFilter;
+  })
+})
 
