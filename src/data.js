@@ -1,7 +1,5 @@
-
 const sortData = (data, sortBy, sortOrder) => {
   let newArrayFilter = [];
-
   for (let i = 0; i < data.length; i++)
     newArrayFilter.push(Object.assign({}, data[i]));
   if (sortBy === 0) {
