@@ -1,11 +1,9 @@
 // Array de la data de Lol//
 const array = Object.values(LOL.data);
-
-//  ----------------------MOSTRAR EL TOPTEN---------------------------------------------
-// liShowTen.addEventListener('click', () => {
-  
-// });
-const templateListChampions = (list) => {
+// funcion de top ten de campeones
+const arrayOfChampionTop = lol.getTopTen(array);
+templateTopChampions(arrayOfChampionTop);
+const templateTopChampions = (list) => {
   let championsList = '';
   list.forEach((array) => {
     const templateList =
@@ -18,6 +16,3 @@ const templateListChampions = (list) => {
   });
   document.getElementById('list-top-ten').innerHTML = championsList;
 };
-const arrayOfChampionTop = lol.getTopTen(array);
-templateListChampions(arrayOfChampionTop);
- 

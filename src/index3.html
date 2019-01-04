@@ -8,68 +8,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="thirst-page">
-      <header class="first-header">
-          <img src="imagenes/logo2.png" alt="" class="logo1">
-          <input class="menu-bar" type="checkbox" id="menu-bar">
-          <label class="icon-menu" for="menu-bar"><img src="imagenes/boton-de-menu.png" alt="" class="img-menu"></label>
-          <nav class="menu-nav">
-            <ul class="menu-ul">
-              <li class="li-menu"><a class="link-menu" href="index.html">Inicio</a></li>
-              <li class="li-menu" id = "li-top-tep" ><a class="link-menu" href="index2.html" id="top-ten">Top Ten</a></li>
-              <li class="li-menu"><a class="link-menu" href="index3.html">Campeones</a>
-                <ul class="menu-ul-2">
-                  <li><a class="link-menu" href="#rol-filter" id="rol-filter">Orden</a></li>
-                  <li><a class="link-menu" href="#characteristic-filter">Roles</a></li>
-                  <li><a class="link-menu" href="#specific-filter">Caracteristicas</a></li>
-                </ul>
-              </li>
-              <li><a class="link-menu" href="#">Modo de juego</a></li>
-              <li><input type="text" id="search" class="box-search"><label for="search" class="label-search"></label><a class="link-share" href=""><img src="imagenes/buscador.png" alt="" class="img-search"></a></li>
-              <li><a class="link-count" href=""><img src="imagenes/boton-cuenta.png" alt="" class="img-count"></a></li>
-            </ul>
-          </nav>
-      </header>
-    <section>
-      <h2>CAMPEONES DE LEAGUE OF LEAGUE</h2>
-      <p>League of Legends cuenta con un plantel de 
-        campeones en constante crecimiento, cada uno
-         con un diseño y un estilo de juego únicos.
-          Aquí podrás ver el plantel actual y conocer 
-          más detalles sobre los personajes que te 
-          interesen.</p>
-    </section>
-    <section class="section-champions" id="section-champions">
-        <h2 class="text-4">LISTA DE CAMPEONES</h2>
-        <h3 class="text-5">En esta lista conoceras todos los campeones con sus respectivos nombres y titulos</h3>
-        <div class="nav-order">
-          <select class="filter-list" id="order-champions">
-            <option value="00">A-Z</option>
-            <option value="01">Z-A</option>
-          </select>
-          <div class="" id="list-champions" >
-          </div>
-        </div>
-    </section>
-    <section class="section-top-rol" id="section-top-rol" >
-      <div class="box-2" id="box-2">
-        <h2 class="text-5">Filtrado de campeones</h2>
-        <nav class="filter-rols">
-          <input type="checkbox" id="Marksman" class="checkbox" value ="00">
-          <label for="Marksman" class="label">Tirador</label>
-          <input type="checkbox" id="support" class="checkbox" value ="01">
-          <label for="support" class="label">Apoyo</label>
-          <input type="checkbox" id="carry-ap" class="checkbox" value ="02">
-          <label for="carry-ap" class="label">Mago</label>
-          <input type="checkbox" id="Tank" class="checkbox" value ="03">
-          <label for="tank" class="label">Tanque</label>
-          <input type="checkbox" id="figther" class="checkbox" value ="04">
-          <label for="figther" class="label">Luchador</label>
-          <input type="checkbox" id="assassin" class="checkbox" value ="05">
-          <label for="assassin" class="label">Asesino</label>
+    <header class="first-header">
+        <img src="imagenes/logo2.png" alt="" class="logo1">
+        <input class="menu-bar" type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"><img src="imagenes/boton-de-menu.png" alt="" class="img-menu"></label>
+        <nav class="menu-nav">
+          <ul class="menu-ul">
+            <li class="li-menu"><a class="link-menu" href="index.html">Inicio</a></li>
+            <li class="li-menu"><a class="link-menu" href="index2.html">Top Ten</a></li>
+            <li class="li-menu"><a class="link-menu" href="index3.html">Campeones</a></li>
+            <li><a class="link-menu" href="#">Modo de juego</a></li>
+            <li><input type="text" id="search" class="box-search"><label for="search" class="label-search"></label><a class="link-share" href=""><img src="imagenes/buscador.png" alt="" class="img-search"></a></li>
+            <li><a class="link-count" href=""><img src="imagenes/boton-cuenta.png" alt="" class="img-count"></a></li>
+          </ul>
         </nav>
-        <div class="box-filter" id="champions">
-
-        </div>
+    </header>
+    <section class="section-champions" id="section-champions"> 
+      <div class="intro">
+        <h2>CAMPEONES DE LEAGUE OF LEAGUE</h2>
+        <p>League of Legends cuenta con un plantel de 
+          campeones en constante crecimiento, cada uno
+           con un diseño y un estilo de juego únicos.
+            Aquí podrás ver el plantel actual y conocer 
+            más detalles sobre los personajes que te 
+            interesen.</p>
+      </div>
+          <div class="nav-order">
+              <h2>ORDEN</h2>
+              <select class="filter-list" id="order-champions">
+                <option value="00">A-Z</option>
+                <option value="01">Z-A</option>
+              </select>
+          </div>
+          <div class="nav-filter">
+            <h2 class="text-5">FILTRO POR ROLES</h2>
+            <nav class="filter-rols">
+              <input type="checkbox" id="Marksman" class="checkbox" value ="00">
+              <label for="Marksman" class="label">Tirador</label>
+              <input type="checkbox" id="support" class="checkbox" value ="01">
+              <label for="support" class="label">Apoyo</label>
+              <input type="checkbox" id="carry-ap" class="checkbox" value ="02">
+              <label for="carry-ap" class="label">Mago</label>
+              <input type="checkbox" id="Tank" class="checkbox" value ="03">
+              <label for="tank" class="label">Tanque</label>
+              <input type="checkbox" id="figther" class="checkbox" value ="04">
+              <label for="figther" class="label">Luchador</label>
+              <input type="checkbox" id="assassin" class="checkbox" value ="05">
+              <label for="assassin" class="label">Asesino</label>
+            </nav>
+          </div>
+      <div class="box-2" id="list-champions" >
       </div>
     </section>
     <script src="data/lol/lol.js"></script>
