@@ -33,31 +33,37 @@
             más detalles sobre los personajes que te 
             interesen.</p>
       </div>
-          <div class="nav-order">
-              <h2>ORDEN</h2>
-              <select class="filter-list" id="order-champions">
-                <option value="00">A-Z</option>
-                <option value="01">Z-A</option>
-              </select>
-          </div>
-          <div class="nav-filter">
-            <h2 class="text-5">FILTRO POR ROLES</h2>
-            <nav class="filter-rols">
-              <input type="checkbox" id="Marksman" class="checkbox" value ="00">
+      <div class="nav">
+        <div class="nav-order">
+            <h2 class="text-5">ORDEN</h2>
+            <select class="filter-list" id="order-champions">
+              <option value="00">A-Z</option>
+              <option value="01">Z-A</option>
+            </select>
+        </div>
+        <div class="nav-filter">
+          <h2 class="text-5">FILTRO POR ROLES</h2>
+          <form class="filter-rols">
+            <input type="checkbox" id="Marksman" class="checkbox" value ="Marksman">
               <label for="Marksman" class="label">Tirador</label>
-              <input type="checkbox" id="support" class="checkbox" value ="01">
-              <label for="support" class="label">Apoyo</label>
-              <input type="checkbox" id="carry-ap" class="checkbox" value ="02">
-              <label for="carry-ap" class="label">Mago</label>
-              <input type="checkbox" id="Tank" class="checkbox" value ="03">
-              <label for="tank" class="label">Tanque</label>
-              <input type="checkbox" id="figther" class="checkbox" value ="04">
-              <label for="figther" class="label">Luchador</label>
-              <input type="checkbox" id="assassin" class="checkbox" value ="05">
-              <label for="assassin" class="label">Asesino</label>
-            </nav>
-          </div>
+            <input type="checkbox" id="Support" class="checkbox" value ="Support">
+              <label for="Support" class="label">Apoyo</label>
+             <input type="checkbox" id="Mage" class="checkbox" value ="Mage">
+              <label for="Mage" class="label">Mago</label>
+            <input type="checkbox" id="Tank" class="checkbox" value ="Tank">
+              <label for="Tank" class="label">Tanque</label>
+            <input type="checkbox" id="Figther" class="checkbox" value ="Figther">
+              <label for="Figther" class="label">Luchador</label>
+            <input type="checkbox" id="Assassin" class="checkbox" value ="Assassin">
+              <label for="Assassin" class="label">Asesino</label>
+          </form>
+         </div>
+      </div>
+      <div class="modal-window" id="modal">
+
+      </div>
       <div class="box-2" id="list-champions" >
+
       </div>
     </section>
     <script src="data/lol/lol.js"></script>

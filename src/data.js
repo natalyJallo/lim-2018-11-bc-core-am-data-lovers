@@ -4,7 +4,7 @@ const sortData = (data, sortBy, sortOrder) => {
     newArrayFilter.push(Object.assign({}, data[i]));
   if (sortBy === 0) {
     newArrayFilter.sort(
-      function (a1, b1) {
+      function(a1, b1) {
         if (sortOrder === 0) {
           if (a1.name > b1.name) return 1;
           else return -1;
@@ -32,56 +32,29 @@ const getTopTen = (data) => {
   return newArrayOrder.slice(0, 10);
 };
 
-const dataFilter = () => {
-  const newDataArray = [];
-  tagchoices.forEach(options => {
-    if (data.tags.includes(options)) {
-      newDataArray.push(true);
-    } else {
-      newDataArray.push(false);
-    }
-    return newDataArray;
-  });
-
-}
-const filterType = ((data, type) => {
-  data.map(copyData => Object.assign({}, { name: copyData.name, tags: copyData.tags, img: copyData.img, title: copyData.title }));
-  const newDataFinal = [];
-  const arrayOptions = type;
-  data.filter((data) => {
-    arrayOptions.forEach(options => {
-      if (data.tags.includes(options)) {
-        newDataFinal.push(true);
-      } else {
-        newDataFinal.push(false)
-      }
-      return newDataFinal;
-    })
-    if (newDataFinal.includes(false)) {
-      return false;
-    } else {
-      return data;
-    }
-  })
-});
-
+// const filterType = (data) => {
+//   const newData = data.filter((champion) => {
+//     return champion;
+//   });
+//   return newData;
+// };
+const statFunction = (num, array, stats) => {
+  switch (stats) {
+  case 'hp':
+    return (parseFloat(array.stats.hp) + (parseFloat(array.stats.hpperlevel) * num)).toFixed(2);
+  case 'mp':
+    return (parseFloat(array.stats.mp) + (parseFloat(array.stats.mpperlevel) * num)).toFixed(2);
+  case 'armor':
+    return (parseFloat(array.stats.armor) + (parseFloat(array.stats.armorperlevel) * num)).toFixed(2);
+  case 'spellblock':
+    return (parseFloat(array.stats.spellblock) + (parseFloat(array.stats.spellblockperlevel) * num)).toFixed(2);
+  case 'hpregen':
+    return (parseFloat(array.stats.hpregen) + (parseFloat(array.stats.hpregenperlevel) * num)).toFixed(2);
+  }
+};
 window.lol = {
   sortData,
   getTopTen,
-  filterType,
+  statFunction,
+  // filterType,
 };
-
-// const dateStadistic = (data) => {
-//   const newArray = [];
-//   for (let i = 0; i < data.length; i++) {
-//     newArray.push(Object.assign({}, { name: data[i].name, hp: data[i].stats.hp, img: data[i].img }));
-
-
-//   }
-// const filterType = (data, type) => {
-//   const newData = data.map(copyData => Object.assign({}, { name: copyData.name, tags: copyData.tags, img: copyData.img, title: copyData.title }));
-//   const filterTank = newData.filter((champion) => {
-//     return champion.tags.includes(type);
-//   });
-//   return filterTank;
-// };

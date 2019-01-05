@@ -25,7 +25,7 @@
 /*ENCABEZADO DE LAS PAGINAS*/
 .first-header {
   width: 100%;
-  height: 185px;
+  height: 200px;
   background: #252222;
   text-align: center;
   position: fixed;
@@ -135,8 +135,15 @@
 }
 /*SECCIONES DE LAS PAGINAS*/
 .section-welcome {
-  padding-top: 150px;
+  padding-top: 180px;
   display: block;
+}
+.video {
+  position: fixed;
+  width: 300PX;
+  height: 300PX;
+}
+.section {
   background-image: url("imagenes/campeonfinal.jpg");
   background-size: cover;
 }
@@ -232,9 +239,8 @@
   padding-top: 30px;
 }
 .text-5 {
-  font-family: "PT Sans", sans-serif;
-  font-family: "Amiri", serif;
-  font-family: "Poiret One", cursive;
+  padding-top: 15px;
+  font-family: 'Open Sans', sans-serif;
   color: #37342F;
   text-align: center;
   font-size: 15px;
@@ -251,20 +257,22 @@
   padding-bottom: 20px;
 }
 /*Esilo y diseño de la seccion que muestra los campeones*/
+.nav {
+  padding-left: 100px;
+}
 .nav-order {
-  width: 20%;
-  height: 300px;
-  margin-top: 30px;
+  width: 300px;
+  height: 100px;
   float: left;
   border-radius: 6px;
-  background-color: #37342F;
-  
-  
+  background-color: rgba(134, 108, 19, 0.815);
 }
 .nav-filter {
-  width: 60%;
-  height: 300px;
-  margin-left: 300px;
+  width: 700px;
+  height: 100px;
+  margin-left: 350px;
+  background-color: #FFC300;
+  border-radius: 6px;
 }
 .blog-card{
   display: inline-table;
@@ -281,11 +289,13 @@
   text-align: center;
 }
 .filter-list {
-  margin-left: 40%;
+  margin-top: 15px;
+  margin-left: 40px;
   margin-bottom: 50px;
   width: 200px;
   height: 30px;
   border-radius: 6px;
+  
 }
 .filter-list:hover {
   color: #181616;
@@ -331,9 +341,27 @@
 .hide {
   display: none;
 }
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+}
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /*menu responsive*/
-@media (max-width:770px) {
+@media (max-width:) {
   .first-header {
     width: 100%;
     height: 100px;
@@ -406,12 +434,16 @@
   font-family:Open Sans ;
   text-align: center;
 }
-
+.modal-champions {
+  width: 600px;
+  height: 700px;
+  background-color: #FEFEFE;
+}
 .container-list{
   display: block;
   background-color: #EEA730;
 }
-@media (max-width:872px){
+@media (max-width:){
   .first-header {
     width: 100%;
     height: 220px;
@@ -419,7 +451,7 @@
     text-align: center;
   }
 }
-@media (max-width:950px){
+@media (max-width:){
   .first-header {
     width: 100%;
     height: 180px;
