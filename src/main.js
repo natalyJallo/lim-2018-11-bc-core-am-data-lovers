@@ -1,8 +1,6 @@
 // Array de la data de Lol//
 const array = Object.values(LOL.data);
 // funcion de top ten de campeones
-const arrayOfChampionTop = lol.getTopTen(array);
-templateTopChampions(arrayOfChampionTop);
 const templateTopChampions = (list) => {
   let championsList = '';
   list.forEach((array) => {
@@ -16,3 +14,5 @@ const templateTopChampions = (list) => {
   });
   document.getElementById('list-top-ten').innerHTML = championsList;
 };
+const arrayOfChampionTop = lol.getTopTen(array);
+templateTopChampions(arrayOfChampionTop);
