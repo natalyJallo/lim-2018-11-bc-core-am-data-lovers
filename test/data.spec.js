@@ -1,11 +1,19 @@
 require('../src/data.js');
-const input = [{ Aatrox: { version: '6.24.1', id: 'Aatrox', key: '266', name: 'Aatrox', title: 'the Darkin Blade' } },
-  { Ahri: { version: '6.24.1', id: 'Ahri', key: '103', name: 'Ahri', title: 'the Nine-Tailed Fox' } },
-  { Akali: { version: '6.24.1', id: 'Akali', key: '84', name: 'Akali', title: 'the Fist of Shadow' } }
+const input = [
+  {id: 'Aatrox', name: 'Aatrox', img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png'},
+  {id: 'Ahri', name: 'Ahri', img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png'},
+  {id: 'Akali', name: 'Akali', img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png'}
 ];
-const output = [{ Aatrox: { version: '6.24.1', id: 'Aatrox', key: '266', name: 'Aatrox', title: 'the Darkin Blade' } },
-  { Ahri: { version: '6.24.1', id: 'Ahri', key: '103', name: 'Ahri', title: 'the Nine-Tailed Fox' } },
-  { Akali: { version: '6.24.1', id: 'Akali', key: '84', name: 'Akali', title: 'the Fist of Shadow' } }
+
+const output = [
+  {id: 'Aatrox', name: 'Aatrox', img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png'},
+  {id: 'Ahri', name: 'Ahri', img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png'},
+  {id: 'Akali', name: 'Akali', img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png'}
+];
+const output2 = [
+  {id: 'Akali', name: 'Akali', img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png'},
+  {id: 'Ahri', name: 'Ahri', img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png'},
+  {id: 'Aatrox', name: 'Aatrox', img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png'}
 ];
 
 const input2 = [
@@ -28,7 +36,7 @@ const input2 = [
   { name: 'Irelia', stats: { attackdamage: 61.544 }, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Irelia.png' },
   { name: 'Blitzcrank', stats: { attackdamage: 61.54 }, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png' } 
 ];
-const output2 =
+const output3 =
   [{ name: 'Maokai', attackdamage: 63.544, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png' },
     { name: 'Kalista', attackdamage: 63, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Kalista.png' },
     { name: 'Warwick', attackdamage: 62.43, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Warwick.png' },
@@ -40,14 +48,36 @@ const output2 =
     { name: 'Irelia', attackdamage: 61.544, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Irelia.png' },
     { name: 'Blitzcrank', attackdamage: 61.54, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png' }
   ];
+const input3 = [{
+  Aatrox: {
+    version: '6.24.1',
+    id: 'Aatrox',
+    key: '266',
+    name: 'Aatrox',
+    title: 'the Darkin Blade',
+    stats: {
+      hp: 537.8,
+      hpperlevel: 85,
+      mp: 105.6,
+      mpperlevel: 45,
+      movespeed: 345,
+      armor: 24.384,
+      armorperlevel: 3.8,
+      spellblock: 32.1,
+      spellblockperlevel: 1.25,
+      attackrange: 150,
+      hpregen: 6.59,
+      hpregenperlevel: 0.5,
+      mpregen: 0,
+      mpregenperlevel: 0,
+    }
+  }}];
+
+const output4 = [1047.80];
+
 describe('lol', () => {
   it('debería ser un objeto', () => {
     expect(typeof lol).toBe('object');
-  });
-  describe('lol.filterType', () => {
-    it('is a function', () => {
-      expect(typeof lol.filterType).toBe('function');
-    });
   });
   describe('lol.sortData', () => {
     it('Deberia ser una funcion', () => {
@@ -56,15 +86,24 @@ describe('lol', () => {
     it('Deberia retornar un array de objetos ordenados de la A hasta la Z, con el valor de la propiedad ', () => {
       expect(lol.sortData(input, 0, 0)).toEqual(output);
     });
+    it('Deberia retornar un array de objetos ordenados de la Z hasta la A, con el valor de la propiedad ', () => {
+      expect(lol.sortData(input, 0, 1)).toEqual(output2);
+    });
   });
   describe('lol.getTopTen', () => {
     it('Deberia ser una funcion', () => {
       expect(typeof lol.getTopTen).toBe('function');
     });
     it('Debería retornar un array con 10 objetos con mayor numero de ataque', () => {
-      expect(lol.getTopTen(input2)).toEqual(output2);
+      expect(lol.getTopTen(input2)).toEqual(output3);
+    });
+  });
+  describe('lol.statFunction', () => {
+    it('Deberia ser una funcion', () => {
+      expect(typeof lol.statFunction).toBe('function');
+    });
+    it('Debería retornar ', () => {
+      expect(lol.statFunction(6, input3, 1)).toEqual(output4);
     });
   });
 });
-
-

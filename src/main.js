@@ -1,11 +1,12 @@
 // array de la data de Lol//
+/* global array, arrayKeys*/
 const array = Object.values(LOL.data);
 const arrayKeys = Object.values(array[0]);
 const newArrayKeys = Object.keys(arrayKeys[12]);
 
 // Funcion de tenplates para mi campeones
 const templateListChampions = (list) => {
-  let championsList = '';
+  let championsList = [];
   list.forEach((array) => {
     const templateList =
       `<div class='blog-card'>
@@ -28,39 +29,6 @@ sortBy.addEventListener('change', () => {
   templateListChampions(window.lol.sortData(array, parseInt(listenSortBy[0]), parseInt(listenSortBy[1])));
 });
 
-// Funcion de filtrado
-const valuesCheckBox = document.getElementsByClassName('checkbox');
-const checkbox = Object.values(valuesCheckBox);
-let tagChoices = [];
-checkbox.forEach(tag => {
-  tag.addEventListener('change', () => {
-    if (tag.checked === true) {
-      tagChoices.push(tag.value);
-    } else {
-      let element = tagChoices.indexOf(tag.value);
-      tagChoices.splice(element, 1);
-      templateListChampions(array);
-    }
-    const dataFilter = (data) => {
-      const newDataarray = [];
-      tagChoices.forEach(options => {
-        if (data.tags.includes(options)) {
-          newDataarray.push(true);
-        } else {
-          newDataarray.push(false);
-        }
-      });
-      if (newDataarray.includes(false)) {
-        return false;
-      } else {
-        return data;
-      }
-    };
-    const fuctionFilter = array.filter(dataFilter);
-
-    templateListChampions(fuctionFilter);
-  });
-});
 // Ventana Modal
 const windowModal = document.getElementById('modal');
 const createdWindowModal = (modal) => {
@@ -87,41 +55,41 @@ const createdWindowModal = (modal) => {
          <td>${ newArrayKeys[0]}</td>
          <td>${ array.stats.hpperlevel}</td>
          <td>${ array.stats.hp}</td>
-         <td>${window.lol.statFunction(6, array, newArrayKeys[0])}</td>
-         <td>${window.lol.statFunction(12, array, newArrayKeys[0])}</td>
-         <td>${window.lol.statFunction(18, array, newArrayKeys[0])}</td>
+         <td>${window.lol.statFunction(6, array, 1)}</td>
+         <td>${window.lol.statFunction(12, array, 1)}</td>
+         <td>${window.lol.statFunction(18, array, 1)}</td>
        </tr>
        <tr>
          <td>${ newArrayKeys[2]}</td>
          <td>${ array.stats.mpperlevel}</td>
          <td>${ array.stats.mp}</td>
-         <td>${window.lol.statFunction(6, array, newArrayKeys[2])}</td>
-         <td>${window.lol.statFunction(12, array, newArrayKeys[2])}</td>
-         <td>${window.lol.statFunction(18, array, newArrayKeys[2])}</td>
+         <td>${window.lol.statFunction(6, array, 2)}</td>
+         <td>${window.lol.statFunction(12, array, 2)}</td>
+         <td>${window.lol.statFunction(18, array, 2)}</td>
        </tr>
        <tr>
          <td>${ newArrayKeys[5]}</td>
          <td>${ array.stats.armorperlevel}</td>
          <td>${ array.stats.armor}</td>
-         <td>${window.lol.statFunction(6, array, newArrayKeys[5])}</td>
-         <td>${window.lol.statFunction(12, array, newArrayKeys[5])}</td>
-         <td>${window.lol.statFunction(18, array, newArrayKeys[5])}</td>
+         <td>${window.lol.statFunction(6, array, 3)}</td>
+         <td>${window.lol.statFunction(12, array, 3)}</td>
+         <td>${window.lol.statFunction(18, array, 3)}</td>
        </tr>
        <tr>
          <td>${ newArrayKeys[7]}</td>
          <td>${ array.stats.spellblockperlevel}</td>
          <td>${ array.stats.spellblock}</td>
-         <td>${window.lol.statFunction(6, array, newArrayKeys[7])}</td>
-         <td>${window.lol.statFunction(12, array, newArrayKeys[7])}</td>
-         <td>${window.lol.statFunction(18, array, newArrayKeys[7])}</td>
+         <td>${window.lol.statFunction(6, array, 4)}</td>
+         <td>${window.lol.statFunction(12, array, 4)}</td>
+         <td>${window.lol.statFunction(18, array, 4)}</td>
        </tr>
        <tr>
          <td>${ newArrayKeys[10]}</td>
          <td>${ array.stats.hpregenperlevel}</td>
          <td>${ array.stats.hpregen}</td>
-         <td>${window.lol.statFunction(6, array, newArrayKeys[10])}</td>
-         <td>${window.lol.statFunction(12, array, newArrayKeys[10])}</td>
-         <td>${window.lol.statFunction(18, array, newArrayKeys[10])}</td>
+         <td>${window.lol.statFunction(6, array, 5)}</td>
+         <td>${window.lol.statFunction(12, array, 5)}</td>
+         <td>${window.lol.statFunction(18, array, 5)}</td>
        </tr>
      </table>
    </div>`;
@@ -129,6 +97,7 @@ const createdWindowModal = (modal) => {
   });
   windowModal.innerHTML = windowFinal;
 };
+
 
 const collecctionModal = document.querySelectorAll('.modal-champions');
 const arrayModal = Array.from(collecctionModal);
@@ -140,3 +109,4 @@ arrayCard.forEach((modal, index) => {
   });
   createdWindowModal(array);
 });
+
