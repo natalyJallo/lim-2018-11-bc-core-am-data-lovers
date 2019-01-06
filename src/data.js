@@ -20,7 +20,7 @@ const sortData = (data, sortBy, sortOrder) => {
 const getTopTen = (data) => {
   const newArray = [];
   for (let i = 0; i < data.length; i++) {
-    newArray.push(Object.assign({}, { name: data[i].name, attackdamage: data[i].stats.attackdamage, img: data[i].img }));
+    newArray.push(Object.assign({}, { name: data[i].name, attackdamage: data[i].stats.attackdamage, img: data[i].img, info: data[i].info}));
   }
   let newArrayOrder = newArray.sort((higher, lessHiger) => {
     if (higher.attackdamage <= lessHiger.attackdamage) {
