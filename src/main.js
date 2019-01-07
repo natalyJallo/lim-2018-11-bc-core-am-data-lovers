@@ -3,6 +3,7 @@
 const array = Object.values(LOL.data);
 const arrayKeys = Object.values(array[0]);
 const newArrayKeys = Object.keys(arrayKeys[12]);
+const arrayTopTen = lol.getTopTen(array);
 
 // Funcion de tenplates para mi campeones
 const templateListChampions = (list) => {
@@ -20,7 +21,22 @@ const templateListChampions = (list) => {
   });
   document.getElementById('list-champions').innerHTML = championsList;
 };
-templateListChampions(array);
+// templatepara el top ten
+const templateListChampionTop = (list) => {
+  let championsList = [];
+  list.forEach((array) => {
+    const templateList =
+      `<div class='blog-card'>
+      <img  src="anima/${array.name}.gif" class="img-class">
+      <h2>${array.name}</h2><br>
+          <h3>Ataque : ${array.attackdamage}</h3><br>
+          </div>`;
+    championsList += templateList;
+  });
+  document.getElementById('list-champion-top').innerHTML = championsList;
+};
+
+templateListChampionTop(arrayTopTen);
 
 // Funcion de ordenar data de ascendente y descente
 const sortBy = document.getElementById('order-champions');
