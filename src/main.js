@@ -4,6 +4,23 @@ const array = Object.values(LOL.data);
 const arrayKeys = Object.values(array[0]);
 const newArrayKeys = Object.keys(arrayKeys[12]);
 
+// Segundo diseño de templates
+const arrayTopTen = lol.getTopTen(array);
+// templatepara el top ten
+const templateListChampionTop = (list) => {
+  let championsList = [];
+  list.forEach((array) => {
+    const templateList =
+      `<div class='blog-card'>
+      <video  class = "video" src="anima/${array.name}.webm" autoplay loop preload="auto" muted ></video>
+      <h2>${array.name}</h2>
+          <h3>Ataque : ${array.attackdamage}</h3>
+          </div>`;
+    championsList += templateList;
+  });
+  document.getElementById('list-champion-top').innerHTML = championsList;
+};
+templateListChampionTop(arrayTopTen);
 // Funcion de tenplates para mi campeones
 const templateListChampions = (list) => {
   let championsList = [];
@@ -99,14 +116,15 @@ const createdWindowModal = (modal) => {
 };
 
 
-const collecctionModal = document.querySelectorAll('.modal-champions');
-const arrayModal = Array.from(collecctionModal);
-const collectionCard = document.querySelectorAll('.blog-card');
-const arrayCard = Array.from(collectionCard);
-arrayCard.forEach((modal, index) => {
-  modal.addEventListener('click', () => {
-    arrayModal[index].style.display = 'block';
-  });
-  createdWindowModal(array);
-});
+// const collecctionModal = document.querySelectorAll('.modal-champions');
+// const arrayModal = Array.from(collecctionModal);
+// const collectionCard = document.querySelectorAll('.blog-card');
+// const arrayCard = Array.from(collectionCard);
+// arrayCard.forEach((modal, index) => {
+//   modal.addEventListener('click', () => {
+//     arrayModal[index].style.display = 'block';
+//   });
+createdWindowModal(array);
+// });
+
 

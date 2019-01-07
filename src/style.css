@@ -177,8 +177,6 @@
   background-size: cover;
   margin-top: 200px;
 }
-.video {
-}
 .section-topten {
   position: absolute;
   display: block;
@@ -279,7 +277,6 @@
   background-size: cover;
   margin: auto;
 }
-
 .box-filter {
   width: 90%;
   height: 100%;
@@ -307,7 +304,7 @@
   height: 300px;
   padding-top: 50px;
   color: #FEFEFE;
-  margin-left: 60px;
+  margin-left: 80px;
 }
 .text-4 {
   font-family: 'Open Sans', sans-serif;
@@ -403,13 +400,13 @@
   display: none;
 }
 .modal-window {
-  position: fixed;
+  position: absolute;
   background-color: rgba(255, 255, 255, 0.25);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  z-index: 3;
   opacity: 0;
   pointer-events: none;
   -webkit-transition: all 0.3s;
@@ -419,6 +416,10 @@
 .modal-window:target {
   opacity: 1;
   pointer-events: auto;
+}
+.video {
+  width: 200px;
+  height: 250px;
 }
 
 /*menu responsive*/
