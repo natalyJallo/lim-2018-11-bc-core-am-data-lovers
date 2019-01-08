@@ -1,36 +1,24 @@
 // Funcion de filtrado
-/* global array, templateListChampions*/
-const valuesCheckBox = document.getElementsByClassName('checkbox');
-const checkbox = Object.values(valuesCheckBox);
-let tagChoices = [];
-checkbox.forEach(tag => {
-  tag.addEventListener('change', () => {
-    if (tag.checked === true) {
-      tagChoices.push(tag.value);
-    } else {
-      let element = tagChoices.indexOf(tag.value);
-      tagChoices.splice(element, 1);
-      templateListChampions(array);
-    }
-    const dataFilter = (data) => {
-      const newDataarray = [];
-      tagChoices.forEach(options => {
-        if (data.tags.includes(options)) {
-          newDataarray.push(true);
-        } else {
-          newDataarray.push(false);
-        }
-      });
-      if (newDataarray.includes(false)) {
-        return false;
+const dataFilter = (data, tagChoices) => {
+  const arr = data.filter(champion => {
+    const newDataarray = [];
+    tagChoices.forEach(options => {
+      if (champion.tags.includes(options)) {
+        newDataarray.push(true);
       } else {
-        return data;
+        newDataarray.push(false);
       }
-    };
-    const fuctionFilter = array.filter(dataFilter);
-    templateListChampions(fuctionFilter);
+    });
+    if (newDataarray.includes(false)) {
+      return false;
+    } else {
+      return champion;
+    }
   });
-});
+  console.log(arr);
+  return arr;
+};
+
 
 // Funcion de ordenar asc y desc
 const sortData = (data, sortBy, sortOrder) => {
@@ -87,5 +75,6 @@ const statFunction = (num, array, stats) => {
 window.lol = {
   sortData,
   getTopTen,
-  statFunction
+  statFunction,
+  dataFilter
 };

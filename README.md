@@ -2,13 +2,15 @@
 
 ## Indice
 
-* [data escogida ](#Data Escogida)
+* [Data ](#Data Escogida)
+* [Planificacion](#Planificación)
 * [League of Legends](#¿Qué es League of legends?)
 
 ***
 
 ## Planificación
 - Uso del tablero canvas -Para la creación de las historias de usuarios
+![imagen]()
 ## Data Escogida  :  League of Leguends
 ![data](http://www.pngall.com/wp-content/uploads/2016/05/League-of-Legends-PNG-Images.png)
 
