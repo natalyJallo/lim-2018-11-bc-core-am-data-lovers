@@ -1,37 +1,3 @@
-// Funcion de filtrado
-/* global array, templateListChampions*/
-const valuesCheckBox = document.getElementsByClassName('checkbox');
-const checkbox = Object.values(valuesCheckBox);
-let tagChoices = [];
-checkbox.forEach(tag => {
-  tag.addEventListener('change', () => {
-    if (tag.checked === true) {
-      tagChoices.push(tag.value);
-    } else {
-      let element = tagChoices.indexOf(tag.value);
-      tagChoices.splice(element, 1);
-      templateListChampions(array);
-    }
-    const dataFilter = (data) => {
-      const newDataarray = [];
-      tagChoices.forEach(options => {
-        if (data.tags.includes(options)) {
-          newDataarray.push(true);
-        } else {
-          newDataarray.push(false);
-        }
-      });
-      if (newDataarray.includes(false)) {
-        return false;
-      } else {
-        return data;
-      }
-    };
-    const fuctionFilter = array.filter(dataFilter);
-    templateListChampions(fuctionFilter);
-  });
-});
-
 // Funcion de ordenar asc y desc
 const sortData = (data, sortBy, sortOrder) => {
   let newArrayFilter = [];
@@ -69,8 +35,29 @@ const getTopTen = (data) => {
   return newArrayOrder.slice(0, 10);
 };
 
+// Funcion de filtrado
+const dataFilter = (data, tagChoices) => {
+  const arr = data.filter(champion => {
+    const newDataarray = [];
+    tagChoices.forEach(options => {
+      if (champion.tags.includes(options)) {
+        newDataarray.push(true);
+      } else {
+        newDataarray.push(false);
+      }
+    });
+    if (newDataarray.includes(false)) {
+      return false;
+    } else {
+      return champion;
+    }
+  });
+  return arr;
+};
+
 // Funcion de operacion de las estadisticas  por cada nivel de cada campeon
 const statFunction = (num, array, stats) => {
+  console.log(array);
   switch (stats) {
   case 1:
     return (parseFloat(array.stats.hp) + (parseFloat(array.stats.hpperlevel) * num)).toFixed(2);
@@ -87,5 +74,6 @@ const statFunction = (num, array, stats) => {
 window.lol = {
   sortData,
   getTopTen,
+  dataFilter,
   statFunction
 };

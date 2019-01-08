@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="thirst-page">
+      <div class="section-video">
+          <video class="video-1" src="anima/animated.webm" autoplay loop preload="auto" muted></video>
+      </div>
     <header class="first-header">
         <img src="imagenes/logo2.png" alt="" class="logo1">
         <input class="menu-bar" type="checkbox" id="menu-bar">
@@ -24,15 +27,6 @@
         </nav>
     </header>
     <section class="section-champions" id="section-champions"> 
-      <!-- <div class="intro">
-        <h2>CAMPEONES DE LEAGUE OF LEAGUE</h2>
-        <p>League of Legends cuenta con un plantel de 
-          campeones en constante crecimiento, cada uno
-           con un diseño y un estilo de juego únicos.
-            Aquí podrás ver el plantel actual y conocer 
-            más detalles sobre los personajes que te 
-            interesen.</p>
-      </div> -->
       <div class="nav">
         <div class="nav-filter">
           <form class="filter-rols">
@@ -44,29 +38,23 @@
               <label for="Mage" class="label">Mago</label>
             <input type="checkbox" id="Tank" class="checkbox" value ="Tank">
               <label for="Tank" class="label">Tanque</label>
-            <input type="checkbox" id="Figther" class="checkbox" value ="Figther">
+            <input type="checkbox" id="Fighter" class="checkbox" value ="Fighter">
               <label for="Figther" class="label">Luchador</label>
             <input type="checkbox" id="Assassin" class="checkbox" value ="Assassin">
               <label for="Assassin" class="label">Asesino</label>
-          </form>
-         </div>
-         <div class="nav-order">
             <select class="filter-list" id="order-champions">
               <option value="00">A-Z</option>
               <option value="01">Z-A</option>
             </select>
-          </div>
+          </form>
+         </div> 
       </div>
-      <!-- <div class="modal-window" id="modal">
-
-      </div> -->
       <div class="box-2" id="list-champions" >
 
-      </div>
-      
+      </div> 
     </section>
     <script src="data/lol/lol.js"></script>
     <script src="data.js"></script>
-    <script src="main.js"></script>
+    <script src="main2.js"></script>
   </body>
 </html>
