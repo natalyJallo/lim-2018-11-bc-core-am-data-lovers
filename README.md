@@ -1,14 +1,40 @@
-# Data Lovers
-  
+# Data Lovers - League of Legends
+## Team : Nataly Jallo Arana ft Janet Gutierrez Montalban
+### Squad : Undefined
+***
 ## Indice
-
-* [data escogida ](#Data Escogida)
-* [League of Legends](#¿Qué es League of legends?)
+* [Definición del producto](#Definicion_del_producto)
+* [Historia de usuario](#Historia_de_usuario)
+* [Sketch](#Sketch)
+* [Diseño de Interfaz del Usuario](#Diseño_de_Interfaz_del_Usuario)
+* [Zeplin](#Zeplin)
+* [Problemas detectados en test](#Problemas_detectados_en_test)
+* [Data ](#Data)
+* [Planificacion](#Planificación)
+* [League of Legends](#¿Qué_es_League_of_legends?)
 
 ***
+![image](https://steemitimages.com/DQmNe2UXvD1Yi5LRL2DZMMP5MZwBTb5xXCX254VL9P2qNBh/LOL-portada.jpg)
+## Definición del Producto
+
+"Nombre de la página" es una  página que permite a los jugadores de LOL encontrar información detallada de sus campeones como :
+- Cuales son los más fuertes , contamos con un Top Ten
+- Los tipos de campeones que existen
+- Los datos específicos de cada campeón
+- Cuánto aumenta el poder de ataque cuando avanza su nivel.
+## Historia de Usuario
+De esta entrevista realizada a la señorita Katherine obtuvimos nuestras historias de usuarios :
+
+- El usuario quiere que se le muestre los campeones más poderosos para así tener más probabilidad de ganar la partida.
+- El usuario quiere que se muestren todos los campeones existentes
+por rol para saber que campeón usar .
+- El usuario quiere visualizar los 10 mejores campeones de cada rol para escoger más rapido y tener más probabilidad de ganar.
+
+
 
 ## Planificación
-- Uso del tablero canvas -Para la creación de las historias de usuarios
+- Uso del tablero canvas - Para la creación de las historias de usuarios
+![imagen](src/anima/)
 ## Data Escogida  :  League of Leguends
 ![data](http://www.pngall.com/wp-content/uploads/2016/05/League-of-Legends-PNG-Images.png)
 
