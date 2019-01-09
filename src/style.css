@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 @import url('https://fonts.googleapis.com/css?family=Amiri|PT+Sans|Poiret+One');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:400,700');
 *{
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@
 .second-page {
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.904);
 }
 .first-page {
   width: 100%;
@@ -28,8 +30,16 @@
   height: 200px;
   background: #252222;
   text-align: center;
-  position: fixed;
-  z-index: 1;
+  position: absolute;
+  z-index: 2;
+}
+.first-header2 {
+  width: 100%;
+  height: 200px;
+  background: #252222;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
 }
 .logo1 {
   width: 200px;
@@ -132,37 +142,69 @@
   width: 20px;
   height: 20px;
 }
-/*Estilo para el segundo encabezado de la pagina de top team*/
-.text {
-  float: left;
-  width: 300px;
-  padding-left: 20px;
-}
+
 /*SECCIONES DE LAS PAGINAS*/
+/* Primera pagina */
 .section-welcome {
   padding-top: 180px;
   display: block;
 }
+.section {
+  background-image: url("imagenes/campeonfinal.jpg");
+  background-size: cover;
+  padding-bottom:  70px;
+}
+.download {
+  width: 150px;
+  height: 50px;
+  background-color: #EEA730;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+  margin-left: 185px;
+}
+.ancle {
+  color: #EEA730;
+}
+.ancle-1 {
+  color: #53420D;
+}
+/* Segunda pagina */
 .section-video {
   width: 100%;
   height: 100%;
   position: absolute;
-}
-.video {
-  width: 200px;
-  height: 250px;
-  transition: 1s opacity;
-}
-.section {
-  background-image: url("imagenes/campeonfinal.jpg");
+  padding-right: 0px;
+  margin-right: 0px;
   background-size: cover;
+  margin-top: 200px;
 }
+.section-topten {
+  position: absolute;
+  display: block;
+  z-index: 1;
+}
+.box-1 {
+  width: 530px;
+  height: 540px;
+  background-color: rgb(0, 0, 0, 0.6);
+  margin: auto;
+  margin-top: 300px;
+  margin-left: 100px;
+}
+
+/* Tercera pagina */
 .section-champions {
   padding-top: 200px;
   display: block;
   background-image: url("imagenes/fondo3.jpg");
   background-size: cover;
   background-attachment: fixed;
+  position: absolute;
+  z-index: 1;
 }
 .intro {
   width: 40%;
@@ -171,12 +213,58 @@
   padding-top: 100px;
   color: #fff;
 }
-.section-topten {
-  display: block;
-  background-size: cover;
-  background-attachment: fixed;
+.nav {
+  background-color:rgba(17, 16, 16, 0.808);
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  border-radius: 40px;
+  margin-top: 70px;
+  padding-top: 20px;
+}
+.nav-filter {
+  width: 600px;
+  height: 100px;
+  border-radius: 6px;
+  margin-left: 0px;
+  padding-left: 0px;
+  float: left;
+}
+.filter-rols {
+  margin: auto;
+  height: 60px;
+  text-align: center;
+  padding-top: 5px;
+}
+.checkbox {
+  margin-top: 20px;
+  margin-left: 5px
+}
+.label {
+  margin-right: 15px;
+  color: #ffff;
+}
+.nav-order {
+  width: 200px;
+  height: 80px;
+  border-radius: 6px;
+  float: right;
   padding-top: 0px;
 }
+.filter-list {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  width: 200px;
+  height: 30px;
+  border-radius: 6px;
+}
+.filter-list:hover {
+  color: #181616;
+  background-color: rgba(255, 255, 255,0.6);
+  border-radius: 6px solid rgba(51, 49, 48, 0.3);
+  cursor: pointer;
+}
+
 .section-top-rol {
   display: none;
 }
@@ -186,35 +274,13 @@
   display: block;
   background-color: red;
 }
-.box-1 {
-  width: 400px;
-  height: 550px;
-  background-color: rgb(0, 0, 0);
-  margin: auto;
-  z-index: 1;
-  margin-top: px;
-}
+
 .box-2 {
   width: 90%;
   height: 100%;
   background-image: url("imagenes/fondo-list4.jpg");
   background-size: cover;
   margin: auto;
-}
-.filter-rols {
-  margin: auto;
-  height: 60px;
-  text-align: center;
-  padding-top: 5px;
-}
-.checkbox {
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-left: 5px
-}
-.label {
-  margin-right: 15px;
-  color: #ffff;
 }
 .box-filter {
   width: 90%;
@@ -223,11 +289,16 @@
 }
 
 /*Estilo de la seccion y texto de la primera pagina*/
+.text {
+  float: left;
+  width: 300px;
+  padding-left: 20px;
+}
 .text-2{
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
   padding-left: 80px;
-  padding-top: 80px;
+  padding-top: 60px;
   color: #EEA730;
 }
 .text-3{
@@ -236,11 +307,9 @@
   font-weight: lighter;
   width: 400px;
   height: 300px;
-  padding-left: 60px;
-  padding-top: 70px;
+  padding-top: 50px;
   color: #FEFEFE;
-  padding-bottom: 30px;
-  z-index: 1;
+  margin-left: 80px;
 }
 .text-4 {
   font-family: 'Open Sans', sans-serif;
@@ -257,35 +326,31 @@
   font-size: 15px;
 }
 .text-6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   font-weight: lighter;
-  width: 80%;
+  width: 90%;
   height: 100px;
   padding-left: 60px;
   color: #FFC300;
   padding-top: 50px;
   padding-bottom: 20px;
-  z-index: 1;
+  letter-spacing: 1pt;
+}
+.text-7 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  width: 400px;
+  height: 300px;
+  padding-top: 30px;
+  color: #FEFEFE;
+  margin-left: 120px;
+  letter-spacing: 1pt;
 }
 /*Esilo y diseño de la seccion que muestra los campeones*/
-.nav {
-  padding-left: 100px;
-}
-.nav-order {
-  width: 300px;
-  height: 100px;
-  float: left;
-  border-radius: 6px;
-  background-color: rgba(134, 108, 19, 0.815);
-}
-.nav-filter {
-  width: 700px;
-  height: 100px;
-  margin-left: 350px;
-  background-color: #FFC300;
-  border-radius: 6px;
-}
+
+
 .blog-card{
   display: inline-table;
   background: gray;
@@ -302,21 +367,6 @@
   text-align: center;
 }
 
-.filter-list {
-  margin-top: 15px;
-  margin-left: 40px;
-  margin-bottom: 50px;
-  width: 200px;
-  height: 30px;
-  border-radius: 6px;
-  
-}
-.filter-list:hover {
-  color: #181616;
-  background-color: rgba(255, 255, 255,0.6);
-  border-radius: 6px solid rgba(51, 49, 48, 0.3);
-  cursor: pointer;
-}
 .box-show-champions {
   width: 100%;
   height: 100%;
@@ -356,13 +406,13 @@
   display: none;
 }
 .modal-window {
-  position: fixed;
+  position: absolute;
   background-color: rgba(255, 255, 255, 0.25);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  z-index: 3;
   opacity: 0;
   pointer-events: none;
   -webkit-transition: all 0.3s;
@@ -372,6 +422,10 @@
 .modal-window:target {
   opacity: 1;
   pointer-events: auto;
+}
+.video {
+  width: 200px;
+  height: 250px;
 }
 
 /*menu responsive*/

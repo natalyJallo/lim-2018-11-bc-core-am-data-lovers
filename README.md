@@ -1,12 +1,29 @@
-# Data Lovers
-
+# Data Lovers - League of Legends
+## Team : Nataly Jallo Arana ft Janet Gutierrez Montalban
+### Squad : Undefined
+***
 ## Indice
-
-* [Data ](#Data Escogida)
+* [Definición del producto](#Definicion_del_producto)
+* [Historia de usuario](#Historia_de_usuario)
+* [Sketch](#Sketch)
+* [Diseño de Interfaz del Usuario](#Diseño_de_Interfaz_del_Usuario)
+* [Zeplin](#Zeplin)
+* [Problemas detectados en test](#Problemas_detectados_en_test)
+* [Data ](#Data)
 * [Planificacion](#Planificación)
-* [League of Legends](#¿Qué es League of legends?)
+* [League of Legends](#¿Qué_es_League_of_legends?)
 
 ***
+## Definición del Producto
+
+"Nombre de la página" es una  página que permite a los jugadores de LOL encontrar información detallada de sus campeones como :
+- Cuales son los más fuertes contamos con un Top Ten
+- Los tipos de campeones que existen
+- Los datos específicos de cada campeón
+- Cuánto aumentar el poder de ataque cuando avanza su nivel.
+
+
+
 
 ## Planificación
 - Uso del tablero canvas -Para la creación de las historias de usuarios
