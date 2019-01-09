@@ -98,6 +98,11 @@ describe('lol', () => {
       expect(lol.getTopTen(input2)).toEqual(output3);
     });
   });
+  describe('lol.dataFilter', () => {
+    it('deberia ser una función', () => {
+      expect(typeof lol.dataFilter).toBe('function');
+    });
+  });
   describe('lol.statFunction', () => {
     it('Deberia ser una funcion', () => {
       expect(typeof lol.statFunction).toBe('function');
