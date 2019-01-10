@@ -20,10 +20,7 @@ const sortData = (data, sortBy, sortOrder) => {
 
 // Funcion de de los 10 mejores campeones
 const getTopTen = (data) => {
-  const newArray = [];
-  for (let i = 0; i < data.length; i++) {
-    newArray.push(Object.assign({}, { name: data[i].name, attackdamage: data[i].stats.attackdamage, img: data[i].img }));
-  }
+  const newArray = data.map(copyData => Object.assign({}, { name: copyData.name, attackdamage: copyData.stats.attackdamage, img: copyData.img }));
   let newArrayOrder = newArray.sort((higher, lessHiger) => {
     if (higher.attackdamage <= lessHiger.attackdamage) {
       return 1;
@@ -56,9 +53,8 @@ const dataFilter = (data, tagChoices) => {
 
 // Funcion de operacion de las estadisticas  por cada nivel de cada campeon
 const statFunction = (num, array, stats) => {
-  console.log(array);
   switch (stats) {
-  case 1:
+  case 1: 
     return (parseFloat(array.stats.hp) + (parseFloat(array.stats.hpperlevel) * num)).toFixed(2);
   case 2:
     return (parseFloat(array.stats.mp) + (parseFloat(array.stats.mpperlevel) * num)).toFixed(2);
@@ -70,7 +66,6 @@ const statFunction = (num, array, stats) => {
     return (parseFloat(array.stats.hpregen) + (parseFloat(array.stats.hpregenperlevel) * num)).toFixed(2);
   }
 };
-
 
 window.lol = {
   sortData,

@@ -48,32 +48,30 @@ const output3 =
     { name: 'Irelia', attackdamage: 61.544, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Irelia.png' },
     { name: 'Blitzcrank', attackdamage: 61.54, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png' }
   ];
-const input3 = [{data: {
-  Aatrox: {
-    version: '6.24.1',
-    id: 'Aatrox',
-    key: '266',
-    name: 'Aatrox',
-    title: 'the Darkin Blade',
-    stats: {
-      hp: 537.8,
-      hpperlevel: 85,
-      mp: 105.6,
-      mpperlevel: 45,
-      movespeed: 345,
-      armor: 24.384,
-      armorperlevel: 3.8,
-      spellblock: 32.1,
-      spellblockperlevel: 1.25,
-      attackrange: 150,
-      hpregen: 6.59,
-      hpregenperlevel: 0.5,
-      mpregen: 0,
-      mpregenperlevel: 0,
-    }
-  }}}];
+const input3 = [ {
+  version: '6.24.1',
+  id: 'Aatrox',
+  key: '266',
+  name: 'Aatrox',
+  stats: {
+    hp: 537.8,
+    hpperlevel: 85,
+    mp: 105.6,
+    mpperlevel: 45,
+    movespeed: 345,
+    armor: 24.384,
+    armorperlevel: 3.8,
+    spellblock: 32.1,
+    spellblockperlevel: 1.25,
+    attackrange: 150,
+    hpregen: 6.59,
+    hpregenperlevel: 0.5,
+    mpregen: 0,
+    mpregenperlevel: 0,
+  }
+}];
 
-const output4 = [1047.80];
+const output4 = [375.60];
 
 describe('lol', () => {
   it('debería ser un objeto', () => {
@@ -108,7 +106,7 @@ describe('lol', () => {
       expect(typeof lol.statFunction).toBe('function');
     });
     it('Debería retornar ', () => {
-      expect(lol.statFunction(6, input3, 1)).toEqual(output4);
+      expect(lol.statFunction(6, input3, 2)).toEqual(output4);
     });
   });
 });
