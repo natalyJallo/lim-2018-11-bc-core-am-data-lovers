@@ -209,6 +209,16 @@
   background-color: rgb(24, 23, 22);
   padding-top: 100px;
 }
+.top-ten {
+ width: 100%;
+ float: left;
+ justify-content: center;
+ margin-bottom: 40px;
+}
+.img-3{
+  margin-top: 30px;
+}
+
 /* Tercera pagina */
 .section-champions {
   padding-top: 200px;
@@ -332,6 +342,14 @@
   color: #FEFEFE;
   margin-left: 120px;
   letter-spacing: 1pt;
+}
+.text-8 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  color: D4AF37;
+  text-align: center;
+  margin-top: 60px;
+  letter-spacing: 2px;
 }
 /*Esilo y diseño de la seccion que muestra los campeones*/
 /* diseño de las tarjetas de lol */
