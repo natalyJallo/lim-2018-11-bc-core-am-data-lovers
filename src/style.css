@@ -1,264 +1,73 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
-body{
-  font-family:'ZCOOL QingKe HuangYou', cursive;
-}
-.img-fondo
-{
-  width: 200px; height: 200px;
-}
-.section-left{
-  color: black;
-  width: 100%;
-  height: 60%;
-}
-.container-top{
-background-image: url("https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c4/Dominion.jpg/revision/latest?cb=20110804135021");
-background-color: black;
-padding :50px 50px 50px 20px ;
-
-}
-.show-champions{
-  margin-top: 0%;
-  box-sizing: border-box;
-
-}
-=======
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Amiri|PT+Sans|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT|Open+Sans');
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/*Diseño de fondo de body*/
-.second-page{
-  background-image: url("imagenes/fondo1.jpg");
-  background-position: center;
-  background-size: cover;
+/*FONDOS DE PAGINAS*/
+.thirst-page {
+  width: 100%;
+  height: 100%;
+}
+.second-page {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.904);
 }
 .first-page {
   width: 100%;
   height: 100%;
 }
-/*Diseño de encabezado de header*/
+/*ENCABEZADO DE LAS PAGINAS*/
 .first-header {
   width: 100%;
-  height: 185px;
+  height: 200px;
   background: #252222;
   text-align: center;
-}
-.welcome-section {
-  background-image: url("imagenes/campeonfinal.jpg");
-  background-position: center;
+  position: absolute;
+  z-index: 1;
   background-size: cover;
 }
-/*Estilo para el logo de lol*/
+.first-header2 {
+  width: 100%;
+  height: 200px;
+  background: #252222;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+}
 .logo1 {
   width: 200px;
   height: 100px;
   margin-top: 20px;
-}
-/*Estilo para iconos de busqueda y cuenta*/
-.img-search{
-  width: 20px;
-  height: 20px;
-  float: right;
-  margin-top: 17px;
-  margin-right: 15px;
-}
-.box-search {
-  float: left;
-  margin-top: 15px;
-  margin-left: 15px;
-  border-radius: 6px;
-  height: 25px;
-}
-.img-count {
-  width: 20px;
-  height: 20px;
-}
-/*Estilo para iconos de menu*/
-.img-menu{
-  width: 20px;
-  height: 20px;
-}
-.img-menu-2 {
-  width: 20px;
-  height: 20px;
-  float: right;
-  margin-right: 20px;
-}
-/*Estilo del div dentro del header*/
-.dropdown-menu {
-  font-family: "Montserrat", sans-serif;
-  width: 100%;
-  height: 65px;
-  top: 0;
-  left: 0;
-  margin-left: auto;
-  display: table;
-  background: #252222;
-  position: fixed;
-  z-index: 100;
-  color: #C9AA71;
-  padding-top: 20px;
-}
-/*Estilo para el segundo encabezado de la pagina de top team*/
-.text {
-  float: left;
-  width: 300px;
-  padding-left: 20px;
 }
 /*Estilo para el input de la barra de navegacion de top team*/
 .menu-bar {
    display: none;
 }
 /*Estilo para el label de los inputs*/
-.icon-menu{
-    cursor: pointer;
-    font-size: 30px;
-    margin: 4px 0;
-}
-.icon-menu-2 {
+.icon-menu {
   display: none;
   width: 60px;
   height: 50px;
   padding: 10px 10px;
 }
-.icon-menu-2:hover {
+.icon-menu:hover {
   cursor: pointer;
   background:  rgba(0, 0, 0, 0.3);
 }
-/*Estilo para la imagen de logo de lol de la segunda pagina*/
-.logo-lol {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-/*Diseño, estilo y animacion del menu que aparece y desaparece de top team*/
-.menu {
-  position: absolute;
-  top: 65px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(51, 51, 51, 0.8);
-  transition: all 0.5s;
-  transform: translateX(-100%);
-}
-.menu a {
-  display: block;
-  color: #ffff;
-  height: 70px;
-  text-decoration: none;
-  padding: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
-}
-.menu a:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-.menu-bar:checked ~ .menu {
-  transform: translateX(0%);
-}
-/*Diseño y estilo para aside de la pagina*/
-.main {
-
-}
-.info-filter {
-  height: 100%;
-  width: 400px;
-}
-.filter-box-general {
-  float: left;
-  width: 230px;
-  height: 100%;
-  background: #252222;
-  padding-top: 50px;
-}
-.filter-menu {
-  margin-top: 40px;
-  height: 100%;
-  padding-left: 20px;
-}
-.filter {
-  height: 120px;
-  text-align: center;
-}
-.thirst-header {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  color: #C9AA71;
-}
-.filter-box {
-  margin-top: 20px;
-  width: 150px;
-  height: 30px;
-  border-radius: 5px;
-}
-/*Diseño y estilo para la seccion de mostrar los filtros de top team*/
-.logo-header {
-  height: 100%;
-  width: 100%;
-}
-.logo2 {
-  width: 300px;
-  height: 150px;
-  margin-left: 300px;
-  margin-top: 90px;
-}
-/*Estilo para la barra de navegacion de la primera pagina*/
-.menu-ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-.menu-ul li:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
-/*Estilo de a de los li de la barra de navegacion de la primera pagina*/
-.link-menu {
-  display: block;
-  padding: 15px 30px;
-  color: #ffff;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Raleway', sans-serif;
-}
-.link-share {
-  display: block;
-  padding top: 15px;
-  width: 230px;
-}
-.link-count {
-  display: block;
-  color: #ffff;
-  text-decoration: none;
-  padding: 15px 25px;
-  width: 70px;
-}
-/*Estilo de la seccion y texto de la primera pagina*/
-.box-text {
-
-}
-.text-2{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
-  padding-left: 80px;
-  padding-top: 80px;
-  color: #EEA730;
-}
-.text-3{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: lighter;
-  width: 400px;
-  height: 300px;
-  padding-left: 60px;
-  padding-top: 30px;
-  color: #FEFEFE;
+.img-menu{
+  width: 20px;
+  height: 20px;
 }
 /*Estilo de clase para nav*/
 .menu-nav {
@@ -269,8 +78,353 @@ padding :50px 50px 50px 20px ;
   width: 100%;
   background: rgba(51, 51, 51, 0.8);
 }
+/*Estilo para la barra de navegacion de la primera pagina*/
+.menu-ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.link-menu {
+  display: block;
+  padding: 15px 30px;
+  color: #ffff;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  list-style: none;
+}
+.link-menu:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+/*Estilo de a de los li de la barra de navegacion de la primera pagina*/
+.li-menu {
+  list-style: none;
+}
+.menu-ul-2 {
+  display: none;
+  list-style: none;
+  background: #252222;
+}
+.li-menu:hover .menu-ul-2 {
+  display: block;
+  position: absolute;
+}
+/*Estilo para iconos de busqueda y cuenta*/
+.box-search {
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 6px;
+  height: 25px;
+}
+.link-share {
+  display: block;
+  padding-top: 15px;
+  width: 230px;
+}
+.img-search{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: 4px;
+}
+.link-count {
+  display: block;
+  color: #ffff;
+  text-decoration: none;
+  padding: 15px 25px;
+  width: 70px;
+}
+.img-count {
+  width: 20px;
+  height: 20px;
+}
+
+/*SECCIONES DE LAS PAGINAS*/
+/* Primera pagina */
+.section-welcome {
+  padding-top: 180px;
+  display: block;
+}
+.section {
+  background-image: url("imagenes/campeonfinal-copy.jpg");
+  background-size: cover;
+  padding-bottom:  70px;
+}
+.download {
+  width: 150px;
+  height: 50px;
+  background-color: #EEA730;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+  margin-left: 240px;
+  margin-top: 60px;
+}
+.ancle {
+  color: #EEA730;
+}
+.ancle-1 {
+  color: #53420D;
+}
+.video-home {
+  width: 560px;
+  height: 315px;
+  margin-left: 70px;
+}
+/* Segunda pagina */
+.section-video {
+  width: 1024px;
+  height: 100%;
+  position: absolute;
+  padding-right: 0px;
+  margin-right: 0px;
+  background-size: cover;
+  margin-top: 200px;
+}
+.video-1 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.section-topten {
+  position: absolute;
+  display: block;
+  z-index: 1;
+}
+.box-1 {
+  width: 530px;
+  height: 540px;
+  background-color: rgb(0, 0, 0, 0.6);
+  margin: auto;
+  margin-top: 300px;
+  margin-left: 100px;
+}
+
+/* Tercera pagina */
+.section-champions {
+  padding-top: 200px;
+  display: block;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  z-index: 1;
+}
+.nav {
+  background-color:rgba(17, 16, 16, 0.808);
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  border-radius: 40px;
+  margin-top: 50px;
+  padding-top: 10px;
+}
+.nav-filter {
+  width: 80%;
+  height: 100px;
+  border-radius: 6px;
+  margin: auto;
+
+}
+.filter-rols {
+  margin: auto;
+  height: 60px;
+  text-align: center;
+  padding-top: 5px;
+}
+.checkbox {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+.label {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: #D4AF37;
+  padding-left: 5px;
+}
+.filter-list {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  width: 200px;
+  height: 30px;
+  border-radius: 6px;
+  float: right;
+}
+.filter-list:hover {
+  color: #181616;
+  background-color: rgba(255, 255, 255,0.6);
+  border-radius: 6px solid rgba(51, 49, 48, 0.3);
+  cursor: pointer;
+}
+.box-2 {
+  width: 90%;
+  height: 100%;
+  background-size: cover;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/*Estilo de la seccion y texto de la primera pagina*/
+.text {
+  float: left;
+  width: 300px;
+  padding-left: 20px;
+}
+.text-2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  padding-left: 80px;
+  padding-top: 60px;
+  color: #EEA730;
+}
+.text-3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  width: 400px;
+  height: 300px;
+  padding-top: 50px;
+  color: #FEFEFE;
+  margin-left: 80px;
+}
+.text-4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  color: #37342F;
+  text-align: center;
+  padding-top: 30px;
+}
+.text-5 {
+  padding-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #37342F;
+  text-align: center;
+  font-size: 15px;
+}
+.text-6 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  width: 90%;
+  height: 100px;
+  padding-left: 60px;
+  color: #FFC300;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  letter-spacing: 1pt;
+}
+.text-7 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  width: 400px;
+  height: 300px;
+  padding-top: 30px;
+  color: #FEFEFE;
+  margin-left: 120px;
+  letter-spacing: 1pt;
+}
+/*Esilo y diseño de la seccion que muestra los campeones*/
+/* diseño de las tarjetas de lol */
+.blog-card{
+  display: inline-table;
+  background: #F0CD65;
+  box-shadow: 0rem 5rem 20rem 1.5rem rgba(0, 0, 2, 0.2);
+  width: 180px;
+  height: 250px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  font-family: "PT Sans", sans-serif;;
+  text-align: center;
+}
+.layer {
+  background-color: rgb(13, 13, 13, 0.82);
+  width: 180px;
+  height: 80px;
+  line-height: 12px;
+}
+.txt-1 {
+  text-decoration: none;
+  color: #D4AF37;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+.txt-2 {
+  color: #fff;
+  font-family: 'Old Standard TT', serif;
+  font-size: 15px;
+}
+.img-1 {
+  width: 180px;
+  height: 170px;
+}
+.img-2 {
+  position: relative;
+  z-index: 3;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  width: 15px;
+  height: 15px;
+}
+.card {
+ text-decoration: none;
+}
+/* diseño de la segunda tarjetas de lol */
+.blog-card-2 {
+  display: inline-table;
+  background: rgb(253, 253, 251);
+  box-shadow: 0rem 5rem 20rem 1.5rem rgba(0, 0, 2, 0.2);
+  width: 500px;
+  height: 350px;
+  margin-left: 95px;
+  margin-bottom: 20px;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  font-family: "PT Sans", sans-serif;;
+  text-align: center;
+}
+.video {
+  width: 450px;
+  height: 300px;
+}
+/* diseño para las ventanas modales */
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.26);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+
+}
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+  
+}
+.modal-champions {
+  margin-top: 100px;
+  background-color: #FEFEFE;
+  margin-left: 30%;
+  width: 600px;
+  height: 500px;
+}
+
 /*menu responsive*/
-@media (max-width:770px) {
+/* @media (max-width:) {
   .first-header {
     width: 100%;
     height: 100px;
@@ -328,8 +482,31 @@ padding :50px 50px 50px 20px ;
     padding: 25px 30px;
     width: 70px;
   }
+} */
+/* .blog-card{
+  display: inline-table;
+  background: #fff;
+  box-shadow: 0rem 5rem 20rem 1.5rem rgba(0, 0, 2, 0.2);
+  width: 150px;
+  height: 150px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  font-family:Open Sans ;
+  text-align: center;
 }
-@media (max-width:872px){
+.modal-champions {
+  width: 600px;
+  height: 700px;
+  background-color: #FEFEFE;
+}
+.container-list{
+  display: block;
+  background-color: #EEA730;
+} */
+/* @media (max-width:){
   .first-header {
     width: 100%;
     height: 220px;
@@ -337,16 +514,16 @@ padding :50px 50px 50px 20px ;
     text-align: center;
   }
 }
-@media (max-width:950px){
+@media (max-width:){
   .first-header {
     width: 100%;
     height: 180px;
     background: #252222;
     text-align: center;
   }
-}
+} */
 /*Estilo para la pantalla de celulares de 440px de ancho */
-@media (max-width:420px) {
+/* @media (max-width:420px) {
   .welcome-section {
     background-image: url("imagenes/campeonfinal.jpg");
     background-position: center;
@@ -417,5 +594,4 @@ padding :50px 50px 50px 20px ;
     padding-left: 50%;
     width: 100px;
   }
-}
->>>>>>> 7f121b9461d9b16e348c53dcd0fd025badbd0d59
+} */

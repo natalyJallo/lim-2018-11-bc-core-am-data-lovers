@@ -1,107 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <meta name="viewport" content="wide=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="second-page">
-    <div class="">
-      <header>
-        <div class="dropdown-menu">
-            <h2 class="text"><img src="imagenes/LOL-logo.png" class="logo-lol" alt="logo de liga de campeones">TOP TEAM</h2>
-            <input class="menu-bar" type="checkbox" id="menu-bar">
-            <label class="icon-menu" for="menu-bar">
-              <img src="imagenes/boton-de-menu.png" alt="" class="img-menu-2">
-            </label>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Roles</a></li>
-              <li><a href="#">Caracteristicas Generales</a></li>
-              <li><a href="#">Datos especificos</a></li>
-            </ul>
-          </nav>
+      <div class="section-video">
+          <video class="" src="anima/campeon2.webm" autoplay loop preload="auto" muted></video>
+      </div>
+    <header class="first-header2">
+        <img src="imagenes/logo2.png" alt="" class="logo1">
+        <input class="menu-bar" type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"><img src="imagenes/boton-de-menu.png" alt="" class="img-menu"></label>
+        <nav class="menu-nav">
+          <ul class="menu-ul">
+            <li class="li-menu"><a class="link-menu" href="index.html">Inicio</a></li>
+            <li class="li-menu"><a class="link-menu" href="index2.html" id="top-ten">Top Ten</a></li>
+            <li class="li-menu"><a class="link-menu" href="index3.html">Campeones</a></li>
+            <li><a class="link-menu" href="#">Modo de juego</a></li>
+            <li><input type="text" id="search" class="box-search"><label for="search" class="label-search"></label><a class="link-share" href=""><img src="imagenes/buscador.png" alt="" class="img-search"></a></li>
+            <li><a class="link-count" href=""><img src="imagenes/boton-cuenta.png" alt="" class="img-count"></a></li>
+          </ul>
+        </nav>
+    </header>
+    <section class="section-topten" id="section-topten">
+      <div class="box-1" id="show-topten">
+          <h2 class="text-6">League of Legends: Los 10 mejores Campeones del juego</h2>
+          <p class="text-3">Esto es sólo una muestra de cómo este juego está dominando 
+                el panorama multijugador, y cada vez más aficionados se unen
+                 a las legiones de jugadores de League of Legends. Si eres 
+                 uno de esos principiantes, querrás elegir el mejor Campeón
+                posible para destacar entre tus amigos. Para que sea más 
+                fácil tomar esta decisión, hemos onstruido esta lista de los 
+                10 mejores Campeones que League of Legends puede ofrecer, 
+                sin un orden concreto.</p>
+            <p class="text-7">¿Cuál es tu favorito?</p>
         </div>
-      </header>
-      <section class="main">
-          <aside class="info-filter">
-            <div class="filter-box-general">
-              <nav class="filter-menu">
-                <div class="filter">
-                  <h3 class="thirst-header">Rango de ataque</h3>
-                  <button type="button" id="attack-range">Ataque</button>
-                  <!---<select class="filter-box" id="attack-range">
-                    <option>Por ataque</option>
-                    <option value="Hight">Alto</option>
-                    <option value="Medium">Medio</option>
-                    <option value="low">Bajo</option>
-                  </select>--->
-                </div>
-                <div class="container-list">
-
-                </div>
-                <div class="filter">
-                  <h3 class="thirst-header">Rango de defensa</h3>
-                  <select class="filter-box" id="defense-range">
-                    <option value="Hight">Alto</option>
-                    <option value="Medium">Medio</option>
-                    <option value="low">Bajo</option>
-                  </select>
-                </div>
-                <div class="filter">
-                  <h3 class="thirst-header">Rango de magia</h3>
-                  <select class="filter-box" id="magic-range">
-                    <option value="Hight">Alto</option>
-                    <option value="Medium">Medio</option>
-                    <option value="low">Bajo</option>
-                  </select>
-                </div>
-                <div class="filter">
-                  <h3 class="thirst-header">Rango de dificultad</h3>
-                  <select class="filter-box" id="difficulty-range">
-                    <option value="Hight">Alto</option>
-                    <option value="Medium">Medio</option>
-                    <option value="low">Bajo</option>
-                  </select>
-                </div>
-              </nav>
-            </div>
-          </aside>
-        <section>
-          <div class="logo-header">
-            <img src="imagenes/logo2.png" class="logo2" alt="">
-          </div>
-          <div class="data-filter" id="data-filter">
-            <h3>por ataque</h3>
-
-          </div>
-
-
-
-        </section>
-      </section>
-    </div>
-
-
-
-
-
-<!---<header>
-    <section>
-
+        <div  class="box-3" id="list-champion-top"></div>
     </section>
-    <div id="root"></div>
-    <h1>Hola Nataly probando los cambios</h1>
-    <button id="btn-attack" type="button" name="button">Lista de ataque</button>
-    <button id="btn-magic" type="button" name="button">Lista de magia</button>
-    <button id="btn-difficulty" type="button" name="button">Lista de dificultad</button>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
     <script src="data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
