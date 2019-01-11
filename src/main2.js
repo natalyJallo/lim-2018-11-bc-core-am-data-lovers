@@ -8,6 +8,7 @@ newStats;
 const conteinerChampions = document.getElementById('list-champions');
 const templateListChampions = (array) => {
   let championsList = [];
+  console.log(championsList);
   let newchampionList = [];
   conteinerChampions.value = '';
   for (let i = 0; i < array.length; i++) 

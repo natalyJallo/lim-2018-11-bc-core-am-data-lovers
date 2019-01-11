@@ -36,8 +36,9 @@ const input2 = [
   { name: 'Irelia', stats: { attackdamage: 61.544 }, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Irelia.png' },
   { name: 'Blitzcrank', stats: { attackdamage: 61.54 }, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png' }
 ];
-const output3 =
-  [{ name: 'Maokai', attackdamage: 63.544, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png' },
+
+const output3 = [ 
+  { name: 'Maokai', attackdamage: 63.544, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png' },
   { name: 'Kalista', attackdamage: 63, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Kalista.png' },
   { name: 'Warwick', attackdamage: 62.43, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Warwick.png' },
   { name: 'Singed', attackdamage: 62.32, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Singed.png' },
@@ -47,7 +48,8 @@ const output3 =
   { name: 'Galio', attackdamage: 61.97, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Galio.png' },
   { name: 'Irelia', attackdamage: 61.544, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Irelia.png' },
   { name: 'Blitzcrank', attackdamage: 61.54, img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png' }
-  ];
+];
+
 const input3 = [{
   Aatrox: {
     version: '6.24.1',
@@ -139,6 +141,7 @@ describe('lol', () => {
       expect(typeof lol.statFunction).toBe('function');
     });
     it('Debería retornar ', () => {
+      console.log(array);
       expect(lol.statFunction(6, input3, 1)).toEqual(output5);
     });
     it('Debería retornar ', () => {

@@ -57,10 +57,10 @@ const dataFilter = (data, tagChoices) => {
 
 // Funcion de operacion de las estadisticas  por cada nivel de cada campeon
 const statFunction = (num, array, stats) => {
-  console.log(array);
+  
   switch (stats) {
   case 1:
-    return (parseFloat(array.stats.hp) + (parseFloat(array.stats.hpperlevel) * num)).toFixed(2);
+    return ( parseFloat(array.stats.hp) + (parseFloat(array.stats.hpperlevel) * num)).toFixed(2);
   case 2:
     return (parseFloat(array.stats.mp) + (parseFloat(array.stats.mpperlevel) * num)).toFixed(2);
   case 3:
