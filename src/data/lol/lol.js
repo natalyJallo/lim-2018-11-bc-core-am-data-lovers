@@ -891,7 +891,7 @@ var LOL = {
       version: "6.24.1",
       id: "Chogath",
       key: "31",
-      name: "Cho'Gath",
+      name: "Cho Gath",
       title: "the Terror of the Void",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Chogath.png",
@@ -2816,7 +2816,7 @@ var LOL = {
       version: "6.24.1",
       id: "Khazix",
       key: "121",
-      name: "Kha'Zix",
+      name: "Kha Zix",
       title: "the Voidreaver",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Khazix.png",
@@ -2972,7 +2972,7 @@ var LOL = {
       version: "6.24.1",
       id: "KogMaw",
       key: "96",
-      name: "Kog'Maw",
+      name: "Kog Maw",
       title: "the Mouth of the Abyss",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/KogMaw.png",
@@ -4428,7 +4428,7 @@ var LOL = {
       version: "6.24.1",
       id: "RekSai",
       key: "421",
-      name: "Rek'Sai",
+      name: "Rek Sai",
       title: "the Void Burrower",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/RekSai.png",
@@ -6196,7 +6196,7 @@ var LOL = {
       version: "6.24.1",
       id: "Velkoz",
       key: "161",
-      name: "Vel'Koz",
+      name: "Vel Koz",
       title: "the Eye of the Void",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Velkoz.png",

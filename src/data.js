@@ -1,19 +1,20 @@
-const sortData = (data, sortBy, sortOrder) => {
+// Funcion de ordenar asc y desc
+const sortData = (data, sortBy) => {
   let newArrayFilter = [];
   for (let i = 0; i < data.length; i++)
     newArrayFilter.push(Object.assign({}, data[i]));
-  if (sortBy === 0) {
-    newArrayFilter.sort(
-      function(a1, b1) {
-        if (sortOrder === 0) {
-          if (a1.name > b1.name) return 1;
-          else return -1;
-        } else {
-          if (a1.name < b1.name) return 1;
-          else return -1;
-        }
+  newArrayFilter.sort(
+    function(a1, b1) {
+      if (a1.name > b1.name) {
+        return 1;
+      } if (a1.name < b1.name) {
+        return -1;
       }
-    );
+      return 0;
+    }
+  );
+  if (sortBy === '01') {
+    newArrayFilter.reverse();
   }
   return newArrayFilter;
 };
@@ -53,17 +54,24 @@ const dataFilter = (data, tagChoices) => {
 
 // Funcion de operacion de las estadisticas  por cada nivel de cada campeon
 const statFunction = (num, array, stats) => {
-  switch (stats) {
-  case 1: 
-    return (parseFloat(array.stats.hp) + (parseFloat(array.stats.hpperlevel) * num)).toFixed(2);
-  case 2:
-    return (parseFloat(array.stats.mp) + (parseFloat(array.stats.mpperlevel) * num)).toFixed(2);
-  case 3:
-    return (parseFloat(array.stats.armor) + (parseFloat(array.stats.armorperlevel) * num)).toFixed(2);
-  case 4:
-    return (parseFloat(array.stats.spellblock) + (parseFloat(array.stats.spellblockperlevel) * num)).toFixed(2);
-  case 5:
-    return (parseFloat(array.stats.hpregen) + (parseFloat(array.stats.hpregenperlevel) * num)).toFixed(2);
+  for (let i = 0; i < array.length; i++) {
+    if (stats === 1) {
+      return (parseFloat(array[i].stats.hp) + (parseFloat(array[i].stats.hpperlevel) * num)).toFixed(2);
+    }
+    if (stats === 2) {
+      return (parseFloat(array[i].stats.mp) + (parseFloat(array[i].stats.mpperlevel) * num)).toFixed(2);
+    }
+    if (stats === 3) {
+      return (parseFloat(array[i].stats.armor) + (parseFloat(array[i].stats.armorperlevel) * num)).toFixed(2);
+    }
+    if (stats === 4) {
+      return (parseFloat(array[i].stats.spellblock) + (parseFloat(array[i].stats.spellblockperlevel) * num)).toFixed(2);
+    }
+    if (stats === 5) {
+      return (parseFloat(array[i].stats.hpregen) + (parseFloat(array[i].stats.hpregenperlevel) * num)).toFixed(2);
+    } else {
+      return 0;
+    }
   }
 };
 
