@@ -533,7 +533,7 @@
   margin-bottom: 20px;
   border-radius: 0.375rem;
   overflow: hidden;
-  font-family: "PT Sans", sans-serif;;
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -548,8 +548,11 @@
   margin-top: 10px;
   margin-right: 10px;
 }
+
 /* diseño para las ventanas modales */
 .modal-window {
+  width: 100%;
+  height: 100%;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.26);
   top: 0;
@@ -567,15 +570,114 @@
 .modal-window:target {
   opacity: 1;
   pointer-events: auto;
-  
 }
 .modal-champions {
-  margin-top: 100px;
-  background-color: #FEFEFE;
-  margin-left: 30%;
-  width: 600px;
-  height: 500px;
+  position: relative;
+  background-color: rgb(32, 32, 30);
+  width: 700px;
+  height: 570px;
+  margin: auto;
+  border-radius: 10px;
+  z-index: 1000;
 }
+.modal-close {
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  color: #bba767
+}
+.modal-text {
+  text-decoration: none;
+  color: #D4AF37;
+  font-size: 35px;  
+  text-align: center;
+  float: right;
+  padding-top: 40px;
+  padding-right: 160px;
+  width: 85px;
+  font-family: 'EB Garamond', serif;
+  font-weight: lighter;
+}
+.modal-text2{
+  text-decoration: none;
+  color: #D4AF37;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  text-align: center;
+  float: right;
+  padding-top: 10px;
+  padding-right: 40px;
+  width: 250px;
+}
+.modal-text3{
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: 'Reem Kufi', sans-serif;
+  text-align: center;
+  color: #FEFEFE;
+  text-align: justify;
+  width: 260px;
+  float: right;
+  padding-right: 20px;
+}
+.modal-text4 {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  width: 600px;
+  color: #FEFEFE;
+  text-align: justify;
+  float: right;
+  padding-right: 90px;
+  padding-bottom: 10px;
+  font-weight: lighter;
+}
+.img-modal {
+  margin-top: 20px;
+  width: 400px;
+  height: 280px;
+  margin-left: 3%;
+  box-shadow: 2px 2px 10px rgb(29, 28, 28); 
+  border-radius: 10px; 
+  float: left;
+  margin-bottom: 20px;
+}
+.img-modal2{
+ padding-left: 18px;
+}
+.table {
+  width: 80%;
+  margin: auto;
+  
+}
+.row {
+ width: 20%;
+ border: 1px solid rgb(168, 133, 38);
+ text-align: center;
+}
+.col {
+width: 16%;
+text-align: center;
+border: #1f1d1c;
+top: 5px;
+bottom: 5px;
+border: 1px solid rgb(168, 133, 38);
+color: #FEFEFE;
+border-collapse: collapse;
+padding: 0.3em;
+font-size: 13px;
+font-family: "PT Sans", sans-serif;
+letter-spacing: 1px;
+}
+.text-row {
+  text-align: left;
+  padding-left: 10px;
+}
+
 
 /*menu responsive*/
 /* @media (max-width:) {
@@ -677,7 +779,7 @@
   }
 } */
 /*Estilo para la pantalla de celulares de 440px de ancho */
-/* @media (max-width:420px) {
+@media (max-width:420px) {
   .welcome-section {
     background-image: url("imagenes/campeonfinal.jpg");
     background-position: center;
@@ -748,4 +850,4 @@
     padding-left: 50%;
     width: 100px;
   }
-} */
+}
