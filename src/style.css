@@ -69,11 +69,8 @@
   height: 50px;
   padding: 10px 10px;
 }
-.icon-menu:hover {
-  cursor: pointer;
-  background:  rgba(0, 0, 0, 0.3);
-}
 .img-menu{
+  display: none;
   width: 20px;
   height: 20px;
 }
@@ -652,7 +649,6 @@
 .table {
   width: 80%;
   margin: auto;
-  
 }
 .row {
  width: 20%;
@@ -678,176 +674,89 @@ letter-spacing: 1px;
   padding-left: 10px;
 }
 
+/* menu responsive*/
+/*Estilo para la pantalla de celulares de 440px de ancho */
+@media (max-width: 400px) {
 
-/*menu responsive*/
-/* @media (max-width:) {
-  .first-header {
-    width: 100%;
-    height: 100px;
-    background: #252222;
-    text-align: center;
-  }
-  .icon-menu-2 {
-    display: block;
-  }
-  .menu-nav {
-    margin-top: 50px;
-    display: block;
-    position: absolute;
-    background: #252222;
-    width: 100%;
-    transform: translateX(-100%);
-    transition: all 0.5s;
-    background: rgba(51, 51, 51, 0.8);
-  }
-  .menu-ul {
-    flex-direction: column;
-  }
-  .menu-bar:checked ~ .menu-nav {
-    transform: translateX(0%);
-  }
-  .link-menu {
-    display: block;
-    padding: 25px 30px;
-    color: #ffff;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-  }
-  .box-search {
-    float: left;
-    margin-top: 15px;
-    margin-left: 300px;
-    border-radius: 6px;
-    height: 25px;
-    margin-right: 0;
-  }
-  .label-search {
-    float: right;
-    display: block;
-  }
-  .link-share {
-    display: block;
-    padding: 25px 30px;
-    width: 230px;
-  }
-  .link-count {
-    display: block;
-    color: #ffff;
-    text-decoration: none;
-    padding: 25px 30px;
-    width: 70px;
-  }
-} */
-/* .blog-card{
-  display: inline-table;
-  background: #fff;
-  box-shadow: 0rem 5rem 20rem 1.5rem rgba(0, 0, 2, 0.2);
-  width: 150px;
-  height: 150px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  padding-top: 50px;
-  border-radius: 0.375rem;
-  overflow: hidden;
-  font-family:Open Sans ;
-  text-align: center;
-}
-.modal-champions {
-  width: 600px;
-  height: 700px;
-  background-color: #FEFEFE;
-}
-.container-list{
-  display: block;
-  background-color: #EEA730;
-} */
-/* @media (max-width:){
-  .first-header {
-    width: 100%;
-    height: 220px;
-    background: #252222;
-    text-align: center;
-  }
-}
-@media (max-width:){
+  /*Estilo para el label de los inputs*/
   .first-header {
     width: 100%;
     height: 180px;
-    background: #252222;
-    text-align: center;
   }
-} */
-/*Estilo para la pantalla de celulares de 440px de ancho */
-@media (max-width:420px) {
-  .welcome-section {
-    background-image: url("imagenes/campeonfinal.jpg");
-    background-position: center;
-    background-size: cover;
+  .box-search {
+    padding-left: 50px;
   }
-  .text-2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    padding-left: 40px;
-    padding-top: 80px;
-    color: #EEA730;
-  }
-  .text-3{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: lighter;
-    width: 220px;
-    height: 300px;
-    padding-left: 30px;
-    padding-top: 30px;
-    color: #FEFEFE;
+  .icon-menu {
+   cursor: pointer;
+   display: block;
   }
   .menu-nav {
-    display: block;
     position: absolute;
-    top: 130px;
-    padding-top: 0px;
-    left: 0;
+    top: 180px;
+    left: 0px;
     width: 100%;
-    background: rgba(51, 51, 51, 0.8);
+    transform: translateX(-100%);
+    transition: all 0.2s;
   }
-  .link-menu {
+  .menu-bar:checked ~ .menu-nav {
+    transform:  translateX(0%);
+  }
+  .menu-ul {
     display: block;
-    padding: 25px 30px;
-    color: #ffff;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
+  }
+  .menu-li2 {  
+    padding: 15px 50px;
+   }
+  .menu-li3 {
+    padding: 15px 35%;
+   }
+}
+@media (max-width: 768px) {
+  /*Estilo para el label de los inputs*/
+  .icon-menu {
+   display: block;
+   cursor: pointer;
+  }
+  .first-header {
+    width: 100%;
+    height: 180px;
   }
   .box-search {
     float: left;
-    margin-top: 15px;
-    margin-left: 70px;
-    border-radius: 6px;
-    height: 25px;
-    margin-right: 0;
+    justify-content: center;
   }
   .label-search {
-    float: right;
+    left: 0px;
+  }
+  .img-menu {
     display: block;
   }
-  .img-search{
-    width: 20px;
-    height: 20px;
-    padding: 0;
+  .menu-nav {
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s;
   }
-  .link-share {
+  .menu-ul {
     display: block;
-    color: #ffff;
-    text-decoration: none;
-    padding: 25px 30px;
   }
-  .link-count {
-    display: block;
-    color: #ffff;
-    text-decoration: none;
-    padding: 20px;
-    padding-left: 50%;
-    width: 100px;
+  .menu-bar:checked ~ .menu-nav {
+    transform:  translateX(0%);
+  }
+  .menu-li2 {
+   display: block;
+   padding: 15px 35%;
+   text-decoration: none;
+   font-family: 'Open Sans', sans-serif;
+   list-style: none;
+  }
+  .menu-li3 {
+   display: block;
+   padding: 15px 45%;
+   text-decoration: none;
+   font-family: 'Open Sans', sans-serif;
+   list-style: none;
   }
 }
