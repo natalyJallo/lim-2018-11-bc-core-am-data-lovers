@@ -4,10 +4,10 @@ const sortData = (data, sortBy) => {
   for (let i = 0; i < data.length; i++)
     newArrayFilter.push(Object.assign({}, data[i]));
   newArrayFilter.sort(
-    function(a1, b1) {
-      if (a1.name > b1.name) {
+    function(champion1, champion2) {
+      if (champion1.name > champion2.name) {
         return 1;
-      } if (a1.name < b1.name) {
+      } if (champion1.name < champion2.name) {
         return -1;
       }
       return 0;
