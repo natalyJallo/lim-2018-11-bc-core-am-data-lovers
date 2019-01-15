@@ -3,14 +3,13 @@
 ### Squad : Undefined
 ***
 ## Tabla de Contenido 
-![icon]()
 * [League of Legends](#¿Qué_es_League_of_legends?)
 * [Definición del producto](#Definicion_del_producto)
 * [Historia de usuario](#Historia_de_usuario)
 * [Sketch](#Sketch)
 * [Diseño de Interfaz del Usuario](#Diseño_de_Interfaz_del_Usuario)
 * [Zeplin](#Zeplin)
-* [Problemas detectados en test](#Problemas_detectados_en_test)
+* [Problemas detectados en test usabilidad](#Problemas_detectados_en_test_usabilidad)
 
 ***
 ![image](https://steemitimages.com/DQmNe2UXvD1Yi5LRL2DZMMP5MZwBTb5xXCX254VL9P2qNBh/LOL-portada.jpg)
@@ -27,7 +26,7 @@ Para definir cual sería la funcionalidad de la página seguimos los siguientes 
 ![image](src\imagenes\boceto-entrevista.jpeg)
 3. Buscar usuarios que jueguen LOL .
 4. Entrevista al usuario .
-![image](src\anima\entrevista.PNG)
+![image](src\imagenes\preguntas.PNG)
 
 5. Extraer las historia de usuario
 ## Historia de Usuario
@@ -49,8 +48,10 @@ En base a los requerimientos
 
 ## Sketch
 - Prototipo de Baja calidad
-![image](src\imagenes\boceto-sketch.jpg)
-
+![image](src\imagenes\numero1.jpeg)
+![image](src\imagenes\numero2.jpeg)
+![image](src\imagenes\numero3.jpeg)
+![image](src\imagenes\numero4.jpeg)
 ## Diseño de Interfaz del Usuario
 - Prototipo de Alta calidad
 ![image](src\imagenes\pagina1.JPG)
@@ -58,12 +59,23 @@ En base a los requerimientos
 ![image](src\imagenes\paginaDos.JPG)
 ![image](src\imagenes\pagina3.JPG)
 ![image](src\imagenes\pagina4.JPG)
+
 ## Zeplin
 - Versión Escritorio 
 https://zpl.io/VOK5l6Y
 - Versión Celular 
 https://zpl.io/VOK5LMX
-## Problemas detectados en test
-![image](src\imagenes\test-error.PNG)
-Entre otros problemas que encontramos en los test fueron la estructura de nuestros inputs o outputs , con un " console.log " a los parámetros se pudo solucionar en su mayoría además de incluir testear cada condicional para aumentar el porcentajes de líneas cubiertas.
+## Problemas detectados en test usabilidad
+1. Barra de navegación lateral no debería mostrarse en el aside y en reemplazo se coloco un menu navegador en la parte superior de la página.
+2. Inicialmente se creó la función filtrar para mostrar los campeones segun su rol , pero el usuario comentó que cada campeón contaba con dos roles , lo cual nos llevo a modificar la función inicial para que se pueda filtrar los campeones con dos roles como mencionó el usuario.
+3. Las imágenes que se mostraban en pantalla eran muy pequeñas y los splash demasiado grandes , y eso hacía a la página poco llamativa.
+4. La función "Sort data " no funcionaba después de usar la función topTen.
+5. La función topTen no funcionaba después de usar la función " Sort Data ".
+6. Los elementos se cargaban con error por que "no existían" problemas del main.js
+7. Los modales no mostraban los calculos en la función Estadística.
+8. La información no se pintaba en los modales.
+9. Se mostraban más de 10 campeones en la ventana Top Ten
+10. No se podía regresar a la ventana top ten después de  estar en la ventana de Campeones.
+11. El usuario no entendía por que había una barra de navegación Horizontal central y uno lateral.
+
 
