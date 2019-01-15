@@ -19,7 +19,7 @@ const templateListChampions = (array) => {
 
       `<div class='blog-card'>   
             <a class='card' id='${championsList[i].id}' href='#modal${i}'>
-            <img class='img-1'src='campeones/${(championsList[i].name).toLowerCase()}.PNG'><br>
+            <img class='img-1'src='campeones/${(championsList[i].name).toLowerCase()}.png'><br>
             <div class='layer'>
             <img class='img-2' src='imagenes/escudo.PNG'>
             <h2 class='txt-1'>${championsList[i].name}</h2><br>
