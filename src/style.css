@@ -5,11 +5,18 @@
 @import url('https://fonts.googleapis.com/css?family=Amiri|PT+Sans|Poiret+One');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Old+Standard+TT|Open+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Rakkas');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Reem+Kufi');
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
+
 /*FONDOS DE PAGINAS*/
 .thirst-page {
   width: 100%;
@@ -23,15 +30,20 @@
 .first-page {
   width: 100%;
   height: 100%;
+} 
+.fourth-page {
+  width: 100%;
+  height: 100%;
 }
 /*ENCABEZADO DE LAS PAGINAS*/
 .first-header {
   width: 100%;
   height: 200px;
-  background: #252222;
+  background: rgb(37, 34, 34);
   text-align: center;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
+  background-size: cover;
 }
 .first-header2 {
   width: 100%;
@@ -57,11 +69,8 @@
   height: 50px;
   padding: 10px 10px;
 }
-.icon-menu:hover {
-  cursor: pointer;
-  background:  rgba(0, 0, 0, 0.3);
-}
 .img-menu{
+  display: none;
   width: 20px;
   height: 20px;
 }
@@ -150,27 +159,34 @@
   display: block;
 }
 .section {
-  background-image: url("imagenes/campeonfinal.jpg");
+  background-image: url("imagenes/campeonfinal-copy.jpg");
   background-size: cover;
   padding-bottom:  70px;
 }
 .download {
-  width: 150px;
+  width: 160px;
   height: 50px;
   background-color: #EEA730;
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   border-radius: 8px;
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 15px;
   font-weight: bold;
-  margin-left: 185px;
+  margin-left: 280px;
+  margin-top: 60px;
 }
 .ancle {
   color: #EEA730;
 }
 .ancle-1 {
   color: #53420D;
+  text-decoration: none;
+}
+.video-home {
+  width: 560px;
+  height: 315px;
+  margin-left: 70px;
 }
 /* Segunda pagina */
 .section-video {
@@ -182,10 +198,17 @@
   background-size: cover;
   margin-top: 200px;
 }
+.video-1 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
 .section-topten {
   position: absolute;
   display: block;
   z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 .box-1 {
   width: 530px;
@@ -195,61 +218,63 @@
   margin-top: 300px;
   margin-left: 100px;
 }
+.list-champion-top {
+  background-color: #1f1d1c;
+  padding-top: 100px;
+}
+.top-ten {
+ width: 100%;
+ float: left;
+ justify-content: center;
+ margin-bottom: 40px;
+}
+.img-3{
+  margin-top: 30px;
+}
 
 /* Tercera pagina */
 .section-champions {
   padding-top: 200px;
   display: block;
-  background-image: url("imagenes/fondo3.jpg");
-  background-size: cover;
   background-attachment: fixed;
   position: absolute;
   z-index: 1;
-}
-.intro {
-  width: 40%;
-  height: 300px;
-  padding-left: 30px;
-  padding-top: 100px;
-  color: #fff;
+  background-image: url('imagenes/runeterra-s.jpg')
 }
 .nav {
   background-color:rgba(17, 16, 16, 0.808);
-  width: 90%;
-  height: 100px;
+  width: 95%;
+  height: 80px;
   margin: auto;
   border-radius: 40px;
-  margin-top: 70px;
-  padding-top: 20px;
+  margin-top: 50px;
+  padding-top: 10px;
 }
 .nav-filter {
-  width: 600px;
+  width: 90%;
   height: 100px;
   border-radius: 6px;
-  margin-left: 0px;
-  padding-left: 0px;
-  float: left;
+  margin: auto;
 }
 .filter-rols {
   margin: auto;
   height: 60px;
-  text-align: center;
   padding-top: 5px;
+  width: 100%;
 }
 .checkbox {
   margin-top: 20px;
-  margin-left: 5px
+  margin-left: 20px;
+  padding-left: 10px;
+  width: 15px;
+  height: 15px;
 }
 .label {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: #D4AF37;
+  padding-left: 5px;
   margin-right: 15px;
-  color: #ffff;
-}
-.nav-order {
-  width: 200px;
-  height: 80px;
-  border-radius: 6px;
-  float: right;
-  padding-top: 0px;
 }
 .filter-list {
   margin-top: 15px;
@@ -257,6 +282,7 @@
   width: 200px;
   height: 30px;
   border-radius: 6px;
+  float: right;
 }
 .filter-list:hover {
   color: #181616;
@@ -264,44 +290,84 @@
   border-radius: 6px solid rgba(51, 49, 48, 0.3);
   cursor: pointer;
 }
-
-.section-top-rol {
-  display: none;
-}
-.show-topten {
-  width: 90%;
-  height: 100%;
-  display: block;
-  background-color: red;
-}
-
 .box-2 {
   width: 90%;
   height: 100%;
-  background-image: url("imagenes/fondo-list4.jpg");
   background-size: cover;
   margin: auto;
+  margin-top: 50px;
 }
-.box-filter {
+.menu-ul-nav {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+/* Cuarta pagina */
+.section-mode {
+  background-image: url("imagenes/fondo4.JPG");
+  background-size: cover;
+  padding-top: 200px;
+}
+.box-3 {
   width: 90%;
-  height: 100%;
+  height: 700px;;
+  background-size: cover;
+  background-image: url("imagenes/fondo-list4.JPG");
+  margin: auto;
+  margin-top: 40px;
+}
+.tittle-page {
+  width: 94%;
+  height: 50px;
+  margin: auto;
+  padding-top: 30px;
+}
+.tittle {
+  background-color: #37342F;
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: #FEFEFE;
+  font-family: 'Rakkas', cursive;
+  letter-spacing: 2px;
+}
+.box-4 {
+  background-color: rgba(255, 255, 255, 0.445);
+  width: 94%;
+  margin: auto;
+  padding-top: 30px;
+  height: 570px;
+  margin-top: 60px;
+}
+.img-4 {
+  width: 330px;
+  height: 200px;
   margin: auto;
 }
-
+.article {
+  width: 350px;
+  height: 350px;
+  display: inline-table;
+  text-align: center;
+  margin-left: 2px;
+}
+.box-text {
+  margin: auto;
+  padding-left: 35px; 
+  height: 290px;
+}
 /*Estilo de la seccion y texto de la primera pagina*/
 .text {
   float: left;
   width: 300px;
   padding-left: 20px;
 }
-.text-2{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
-  padding-left: 80px;
-  padding-top: 60px;
-  color: #EEA730;
-}
-.text-3{
+.text-1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: lighter;
@@ -309,7 +375,26 @@
   height: 300px;
   padding-top: 50px;
   color: #FEFEFE;
-  margin-left: 80px;
+  margin-left: 60px;
+  text-align: justify;
+}
+.text-2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  margin-left: 100px;
+  padding-top: 70px;
+  color: #EEA730;
+}
+.text-3{
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  width: 400px;
+  height: 300px;
+  padding-top: 50px;
+  color: #FEFEFE;
+  margin-left: 110px;
+  text-align: justify;
 }
 .text-4 {
   font-family: 'Open Sans', sans-serif;
@@ -345,261 +430,539 @@
   height: 300px;
   padding-top: 30px;
   color: #FEFEFE;
-  margin-left: 120px;
+  margin-left: 130px;
   letter-spacing: 1pt;
 }
+.text-8 {
+  font-family: 'EB Garamond', serif;
+  font-size: 40px;
+  color: #D4AF37;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 8px;
+  font-weight: lighter;
+}
+.text-9 {
+  font-size: 25px;
+  color: #D4AF37;
+  font-family: 'EB Garamond', serif;
+}
+.text-10{
+  font-family: 'PT Serif', serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 280px;
+  height: 50px;
+  color: #53420D;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+.text-11 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: 280px;
+  height: 240px;
+  display: block;
+  text-align: center;
+  background-color: hsla(0, 63%, 35%, 0.377);
+  padding-top: 40px;
+  padding: 8px;
+  text-align: justify;
+}
+.text-12 {
+  font-size: 20px;
+  color: #bba767;
+  font-family: 'EB Garamond', serif;
+  font-weight: lighter;
+}
 /*Esilo y diseño de la seccion que muestra los campeones*/
-
-
+/* diseño de las tarjetas de lol */
 .blog-card{
   display: inline-table;
   background: gray;
   box-shadow: 0rem 5rem 20rem 1.5rem rgba(0, 0, 2, 0.2);
   width: 180px;
-  height: 120px;
-  margin-left: 25px;
-  margin-right: 50px;
+  height: 250px;
+  margin-left: 40px;
   margin-bottom: 20px;
-  padding-top: 50px;
-  border-radius: 0.375rem;
   overflow: hidden;
   font-family: "PT Sans", sans-serif;;
   text-align: center;
 }
-
-.box-show-champions {
-  width: 100%;
-  height: 100%;
-
+.layer {
+  background-color: rgb(13, 13, 13, 0.82);
+  width: 180px;
+  height: 80px;
+  line-height: 12px;
 }
-.list-champions {
-  width: 100%;
-  height: 100%;
+.txt-1 {
+  text-decoration: none;
+  color: #D4AF37;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 }
-.new-box-filter {
-  width: 100%;
-  height: 100px;
+.txt-2 {
+  color: #fff;
+  font-family: 'Old Standard TT', serif;
+  font-size: 15px;
 }
-.rol-filter {
-  padding-top: 100px;
-  width: 100%;
-  height: 150px;
-  background-color: #252222;
+.img-1 {
+  width: 180px;
+  height: 170px;
+}
+.img-2 {
+  position: relative;
+  z-index: 3;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  width: 15px;
+  height: 15px;
+}
+.card {
+ text-decoration: none;
+}
+/* diseño de la segunda tarjetas de lol */
+.blog-card-2 {
+  display: inline-table;
+  background: rgba(83, 63, 13, 0.301);
+  /* box-shadow: 0rem 5rem 20rem 1.5rem rgba(0, 0, 2, 0.2); */
+  width: 500px;
+  height: 400px;
+  margin-left: 85px;
+  margin-bottom: 20px;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  font-family: "PT Sans", sans-serif;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
-.rol {
+.video {
+  width: 450px;
+  height: 300px;
+}
+.img-5 {
+  width: 17px;
+  height: 17px;
+  margin-top: 10px;
   margin-right: 10px;
 }
-.rol-label {
-  margin-left: 5px;
-  margin-right: 5px;
-  font-size: 15px;
-  color: #ffff;
-  font-family: "PT Sans", sans-serif;;
-}
-.data-filter {
-  background-image: url(imagenes/fondo-list.jpg);
-  width: 90%;
-  height: 100%;
-}
-.hide {
-  display: none;
-}
+
+/* diseño para las ventanas modales */
 .modal-window {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.26);
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
-  z-index: 3;
+  bottom: 0;
+  z-index: 999;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: all 0.3s;
+   -webkit-transition: all 0.3s;
    -moz-transition: all 0.3s;
    transition: all 0.3s;
+
 }
 .modal-window:target {
   opacity: 1;
   pointer-events: auto;
 }
-.video {
-  width: 200px;
-  height: 250px;
+.modal-champions {
+  position: relative;
+  background-color: rgb(32, 32, 30);
+  width: 700px;
+  height: 570px;
+  margin: auto;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.modal-close {
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  color: #bba767
+}
+.modal-text {
+  text-decoration: none;
+  color: #D4AF37;
+  font-size: 35px;  
+  text-align: center;
+  float: right;
+  padding-top: 40px;
+  padding-right: 160px;
+  width: 85px;
+  font-family: 'EB Garamond', serif;
+  font-weight: lighter;
+}
+.modal-text2{
+  text-decoration: none;
+  color: #D4AF37;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  text-align: center;
+  float: right;
+  padding-top: 10px;
+  padding-right: 40px;
+  width: 250px;
+}
+.modal-text3{
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: 'Reem Kufi', sans-serif;
+  text-align: center;
+  color: #FEFEFE;
+  text-align: justify;
+  width: 260px;
+  float: right;
+  padding-right: 20px;
+}
+.modal-text4 {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  width: 600px;
+  color: #FEFEFE;
+  text-align: justify;
+  float: right;
+  padding-right: 90px;
+  padding-bottom: 10px;
+  font-weight: lighter;
+}
+.img-modal {
+  margin-top: 20px;
+  width: 400px;
+  height: 280px;
+  margin-left: 3%;
+  box-shadow: 2px 2px 10px rgb(29, 28, 28); 
+  border-radius: 10px; 
+  float: left;
+  margin-bottom: 20px;
+}
+.img-modal2{
+ padding-left: 18px;
+}
+.table {
+  width: 80%;
+  margin: auto;
+}
+.row {
+ width: 20%;
+ border: 1px solid rgb(168, 133, 38);
+ text-align: center;
+}
+.col {
+width: 16%;
+text-align: center;
+border: #1f1d1c;
+top: 5px;
+bottom: 5px;
+border: 1px solid rgb(168, 133, 38);
+color: #FEFEFE;
+border-collapse: collapse;
+padding: 0.3em;
+font-size: 13px;
+font-family: "PT Sans", sans-serif;
+letter-spacing: 1px;
+}
+.text-row {
+  text-align: left;
+  padding-left: 10px;
 }
 
-/*menu responsive*/
-/* @media (max-width:) {
-  .first-header {
-    width: 100%;
-    height: 100px;
-    background: #252222;
-    text-align: center;
-  }
-  .icon-menu-2 {
-    display: block;
-  }
-  .menu-nav {
-    margin-top: 50px;
-    display: block;
-    position: absolute;
-    background: #252222;
-    width: 100%;
-    transform: translateX(-100%);
-    transition: all 0.5s;
-    background: rgba(51, 51, 51, 0.8);
-  }
-  .menu-ul {
-    flex-direction: column;
-  }
-  .menu-bar:checked ~ .menu-nav {
-    transform: translateX(0%);
-  }
-  .link-menu {
-    display: block;
-    padding: 25px 30px;
-    color: #ffff;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-  }
-  .box-search {
-    float: left;
-    margin-top: 15px;
-    margin-left: 300px;
-    border-radius: 6px;
-    height: 25px;
-    margin-right: 0;
-  }
-  .label-search {
-    float: right;
-    display: block;
-  }
-  .link-share {
-    display: block;
-    padding: 25px 30px;
-    width: 230px;
-  }
-  .link-count {
-    display: block;
-    color: #ffff;
-    text-decoration: none;
-    padding: 25px 30px;
-    width: 70px;
-  }
-} */
-#list-champion-top{
-  background-color: #37343F;
-}
-.blog-card{
-  display: inline-table;
-  background: #5fa9b4b0;
-  box-shadow: 0rem 5rem 20rem 1.5rem rgba(0, 0, 2, 0.2);
-  width: 150px;
-  height: 150px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  padding-top: 50px;
-  border-radius: 0.375rem;
-  overflow: hidden;
-  font-family:Open Sans ;
-  text-align: center;
-}
-.modal-champions {
-  width: 600px;
-  height: 700px;
-  background-color: #FEFEFE;
-}
-.container-list{
-  display: block;
-  background-color: #EEA730;
-}
-/* @media (max-width:){
-  .first-header {
-    width: 100%;
-    height: 220px;
-    background: #252222;
-    text-align: center;
-  }
-}
-@media (max-width:){
+/* menu responsive*/
+/*Estilo para la pantalla de celulares de 440px de ancho */
+
+@media (max-width: 530px) {
+  /*Estilo para el label de los inputs*/
+  /* primera pagina */
   .first-header {
     width: 100%;
     height: 180px;
-    background: #252222;
-    text-align: center;
   }
-} */
-/*Estilo para la pantalla de celulares de 440px de ancho */
-@media (max-width:420px) {
-  .welcome-section {
-    background-image: url("imagenes/campeonfinal.jpg");
-    background-position: center;
-    background-size: cover;
-  }
-  .text-2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    padding-left: 40px;
-    padding-top: 80px;
-    color: #EEA730;
-  }
-  .text-3{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: lighter;
-    width: 220px;
-    height: 300px;
-    padding-left: 30px;
-    padding-top: 30px;
-    color: #FEFEFE;
+  .icon-menu {
+    display: block;
+    cursor: pointer;
+   }
+  .img-menu {
+    display: block;
   }
   .menu-nav {
-    display: block;
     position: absolute;
-    top: 130px;
-    padding-top: 0px;
-    left: 0;
+    top: 180px;
+    left: 0px;
     width: 100%;
-    background: rgba(51, 51, 51, 0.8);
+    transform: translateX(-100%);
+    transition: all 0.3s;
   }
-  .link-menu {
+  .menu-ul {
     display: block;
-    padding: 25px 30px;
-    color: #ffff;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
+  }
+  .menu-bar:checked ~ .menu-nav {
+    transform:  translateX(0%);
+  }
+  .menu-li2 {
+   display: block;
+   padding: 15px 21%;
+   list-style: none;
+  }
+  .menu-li3 {
+   display: block;
+   padding: 15px 40%;
+   list-style: none;
   }
   .box-search {
     float: left;
-    margin-top: 15px;
-    margin-left: 70px;
-    border-radius: 6px;
-    height: 25px;
-    margin-right: 0;
+    justify-content: center;
   }
-  .label-search {
-    float: right;
-    display: block;
+  .section-welcome {
+    padding-top: 180px;
+    background-color: #181616;
+    height: 1200px;
   }
-  .img-search{
-    width: 20px;
-    height: 20px;
-    padding: 0;
+  .section {
+    background-image: url("imagenes/campeonfinal3.JPG");
+    padding-bottom:  70px;
+    width: 360px;
+    height: 500px;
+    padding-top: 30px;
+    
   }
-  .link-share {
-    display: block;
-    color: #ffff;
-    text-decoration: none;
-    padding: 25px 30px;
+  .text-general {
+    background-color: rgba(66, 64, 64, 0.596);
+    width: 300px;
+    margin-left: 35px;
+    height: 430px;
+    margin-bottom: 30px;
+    margin-top: 90px;
   }
-  .link-count {
-    display: block;
-    color: #ffff;
-    text-decoration: none;
-    padding: 20px;
-    padding-left: 50%;
+  .video-home {
+    width: 300px;
+    height: 320px;
+    margin-left: 35px;
+  }
+  .download {
+    width: 160px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .text-2 {
+    font-size: 25px;
+    margin-left: 20px;
+    padding-top: 50px;
+  }
+  .text-3 {
+    font-size: 18px;
+    width: 250px;
+    height: 300px;
+    padding-top: 50px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+  }
+  
+  /* segunda pagina */
+  .first-header2 {
+    width: 360px;
+    height: 180px;
+  }
+  .second-page {
+    width: 360px;
+  }
+  .section-video {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin-top: 130px;
+  }
+  .video-box {
+    width: 360px;
+    height: 300px;
+  }
+  .box-1 {
+    width: 340px;
+    height: 540px;
+    margin-top: 380px;
+    margin-left: 20px;
+  }
+  .text-6 {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .text-1 {
+    font-size: 14px;
+    width: 300px;
+    margin-left: 10px;
+  }
+  .text-7 {
+    font-size: 24px;
+    width: 400px;
+    height: 300px;
+    margin-left: 40px;
+  }
+  .linea {
     width: 100px;
   }
+  .blog-card-2 {
+    width: 320px;
+    height: 300px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .video {
+    width: 300px;
+    height: 200px;
+  }
+  /* tercera pagina */
+
+  .section-champions {
+    padding-top: 200px;
+    width: 360px;
+    background-image: url('imagenes/runeterra-s.jpg')
+  }
+  .nav {
+    width: 90%;
+    height: 290px;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .filter-list {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    float: left;
+  }
+  .nav-filter {
+    height: 250px;
+  }
+  .filter-rols {
+    height: 250px;
+    padding-top: 0px;
+  }
+  .checkbox {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    width: 15px;
+    height: 15px;
+  }
+  .box-2 {
+    width: 90%;
+    height: 100%;
+    background-size: cover;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .menu-ul-nav {
+    width: 70%;
+    padding-left: 35px;
+    display: block;
+    justify-content: center;
+  }
+  .li-menu2 {
+    width: 100px;
+    height: 20px;
+    margin: 13px;
+  }
+  .label {
+    font-size: 12px;
+    padding-left: 5px;
+    margin-right: 5px;
+  }
+  .blog-card {
+    width: 190px;
+    height: 250px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+  }
+  .layer {
+    width: 190px;
+    height: 80px;
+    line-height: 12px;
+  }
+  .img-1 {
+    width: 190px;
+    height: 170px;
+  }
+  .img-2 {
+    position: relative;
+    z-index: 3;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  /* cuarta pagina */
+  .section-mode {
+    background-image: url("imagenes/.JPG");
+    background-size: cover;
+    background-color: #252222;
+    padding-top: 150px;
+    height: 2050px;
+    width: 360px;
+  }
+  .box-3 {
+    width: 90%;
+    height: 1830px;
+    background-size: cover;
+    background-image: url("imagenes/fondo-list4.JPG");
+    margin: auto;
+    margin-top: 40px;
+  }
+  .tittle-page {
+    width: 94%;
+    height: 50px;
+    margin: auto;
+    padding-top: 30px;
+  }
+  .tittle {
+    background-color: #37342F;
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .box-4 {
+    background-color: rgba(255, 255, 255, 0.445);
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    height: 1700px;
+    margin-top: 60px;
+  }
+  .img-4 {
+    width: 220px;
+    height: 200px;
+    margin-left: 0px;
+  }
+  .article {
+    width: 300px;
+    height: 350px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+  .box-text {
+    margin: auto;
+    padding-left: 15px; 
+    height: 290px;
+  }
+  .text-11 {
+    font-size: 13px;
+    width: 260px;
+    height: 240px;
+    padding-top: 60px;
+    padding: 8px;
+  }
+
 }
