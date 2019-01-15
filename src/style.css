@@ -819,19 +819,20 @@ letter-spacing: 1px;
     height: 200px;
   }
   /* tercera pagina */
+
   .section-champions {
     padding-top: 200px;
     width: 360px;
     background-image: url('imagenes/runeterra-s.jpg')
   }
   .nav {
-    width: 95%;
-    height: 250px;
+    width: 90%;
+    height: 290px;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
   }
   .filter-list {
-    margin-top: 120px;
+    margin-top: 15px;
     margin-bottom: 50px;
     float: left;
   }
@@ -857,11 +858,12 @@ letter-spacing: 1px;
     margin-top: 50px;
   }
   .menu-ul-nav {
-    padding-left: 15px;
+    width: 70%;
+    padding-left: 35px;
     display: block;
     justify-content: center;
   }
-  .li-menu {
+  .li-menu2 {
     width: 100px;
     height: 20px;
     margin: 13px;
@@ -870,6 +872,92 @@ letter-spacing: 1px;
     font-size: 12px;
     padding-left: 5px;
     margin-right: 5px;
+  }
+  .blog-card {
+    width: 190px;
+    height: 250px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+  }
+  .layer {
+    width: 190px;
+    height: 80px;
+    line-height: 12px;
+  }
+  .img-1 {
+    width: 190px;
+    height: 170px;
+  }
+  .img-2 {
+    position: relative;
+    z-index: 3;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  /* cuarta pagina */
+  .section-mode {
+    background-image: url("imagenes/.JPG");
+    background-size: cover;
+    background-color: #252222;
+    padding-top: 150px;
+    height: 2050px;
+    width: 360px;
+  }
+  .box-3 {
+    width: 90%;
+    height: 1830px;
+    background-size: cover;
+    background-image: url("imagenes/fondo-list4.JPG");
+    margin: auto;
+    margin-top: 40px;
+  }
+  .tittle-page {
+    width: 94%;
+    height: 50px;
+    margin: auto;
+    padding-top: 30px;
+  }
+  .tittle {
+    background-color: #37342F;
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .box-4 {
+    background-color: rgba(255, 255, 255, 0.445);
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    height: 1700px;
+    margin-top: 60px;
+  }
+  .img-4 {
+    width: 220px;
+    height: 200px;
+    margin-left: 0px;
+  }
+  .article {
+    width: 300px;
+    height: 350px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+  .box-text {
+    margin: auto;
+    padding-left: 15px; 
+    height: 290px;
+  }
+  .text-11 {
+    font-size: 13px;
+    width: 260px;
+    height: 240px;
+    padding-top: 60px;
+    padding: 8px;
   }
 
 }
