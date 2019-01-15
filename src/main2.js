@@ -21,7 +21,7 @@ const templateListChampions = (array) => {
             <a class='card' id='${championsList[i].id}' href='#modal${i}'>
             <img class='img-1'src='campeones/${(championsList[i].name).toLowerCase()}.png'><br>
             <div class='layer'>
-            <img class='img-2' src='imagenes/escudo.PNG'>
+            <img class='img-2' src='imagenes/escudo.png'>
             <h2 class='txt-1'>${championsList[i].name}</h2><br>
             <h3 class='txt-2'>"${championsList[i].title}"</h3><br>
             </div></a>
@@ -30,7 +30,7 @@ const templateListChampions = (array) => {
         <section class='modal-window' id='modal${i}'>
             <div class='modal-champions' id='${championsList[i].id}'> 
             <a href='#' title='Close' class='modal-close'>X</a>
-            <img class='img-modal'src='anima/${(championsList[i].name).toLowerCase()}.jgp'>
+            <img class='img-modal'src='anima/${(championsList[i].name).toLowerCase()}.jpg'>
             <h1 class='modal-text'><img class='img-modal2'src='imagenes/guerra.png'><br>${championsList[i].name}</h1>
             <h3 class='modal-text2'>"${ championsList[i].title}"</h3>
             <p class='modal-text3'>${ championsList[i].blurb}<br>
