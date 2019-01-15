@@ -1,78 +1,81 @@
-# Data Lovers
-
-## Indice
-
-* [data escogida ](#Data Escogida)
-* [League of Legends](#¿Qué es League of legends?)
+# Data Lovers - League of Legends
+## Team : Nataly Jallo Arana ft Janet Gutierrez Montalban
+### Squad : Undefined
+***
+## Tabla de Contenido 
+* [League of Legends](#¿Qué_es_League_of_legends?)
+* [Definición del producto](#Definicion_del_producto)
+* [Historia de usuario](#Historia_de_usuario)
+* [Sketch](#Sketch)
+* [Diseño de Interfaz del Usuario](#Diseño_de_Interfaz_del_Usuario)
+* [Zeplin](#Zeplin)
+* [Problemas detectados en test usabilidad](#Problemas_detectados_en_test_usabilidad)
 
 ***
-
-## Planificación
-- Uso del tablero canvas -Para la creación de las historias de usuarios
-## Data Escogida  :  League of Leguends
-![data](http://www.pngall.com/wp-content/uploads/2016/05/League-of-Legends-PNG-Images.png)
-
+![image](https://steemitimages.com/DQmNe2UXvD1Yi5LRL2DZMMP5MZwBTb5xXCX254VL9P2qNBh/LOL-portada.jpg)
 ### ¿Qué es League of legends?
 
 * League of Legends es un juego competitivo en línea de ritmo frenético, que fusiona la velocidad y la intensidad de la estrategia en tiempo real (ETR) con elementos de juegos de rol. Dos equipos de poderosos campeones, cada uno con un diseño y estilo de juegos únicos, compiten cara a cara a través de diversos campos de batalla y modos de juego. Con un plantel de campeones en constante expansión, actualizaciones frecuentes y un emocionante panorama competitivo, League of Legends ofrece posibilidades de juego ilimitadas a usuarios de todos los niveles de habilidad.
 
----
+## Definición del Producto
+Para definir cual sería la funcionalidad de la página seguimos los siguientes pasos :
+1.  Planificación
+- Organizar nuestro tablero canvas con las primeras actividades de la entrevista .
+![image](src\imagenes\tablero-canvas-start.jpg)
+2. Crear nuestro esquema de entrevista .
+![image](src\imagenes\boceto-entrevista.jpeg)
+3. Buscar usuarios que jueguen LOL .
+4. Entrevista al usuario .
+![image](src\imagenes\preguntas.PNG)
 
-## Campeones
-
-* La data a manipular de league of legends tiene gran cantidad de informacion pero sólo de los campeones , desde su tipo de campeon como cada uno de sus poderes , por eso como equipo vimos la data como un catalogo pero de campeones .
----
-
+5. Extraer las historia de usuario
 ## Historia de Usuario
-
-Nombre de Data  : LEAGUE OF LEGUENDS
-# ENTREVISTA AL USUARIO
-1. Hola,soy Janet ,¿Cómo estas?,Un gusto conocerte.Cuéntame de donde eres.
-
-- Mi nombre es katherine Ormeño , soy de lima perú , vivo en        magdalena y tengo 21 años
-2. Cuentame de que trata LOL?
-- Lol lo conocí más por que jugaba dota ,lol es parecido a dota ,  se trata de llegar a la base del contrincante peleas junto a otros usuarios,  osea que es de colaboración.
-3. Cuentame tu última experiencia Jugando Lol
-- La última vez que jugué lol fue de Support,existen como 3 roles,TOP,MID Y SUPPORT,
-con el personaje de shannon o Usher,uno de los principales cuando te creas
-tu cuenta , pero me acostumbré  a jugar con timo.
-4. ¿Qué característica es la que te llama la atención para escoger un personaje entre tantos?
-- Primero los colores que usaron en las temáticas , no veía mucho las caracteristicas,por que
-me llama la atención lo visual, a la larga me gusta especializarme en un personaje.
-5. Fuera del diseño , que característica es importante?
-- El ataque y los hechizos que tenga por que es un juego de estratégia
-6. ¿Cual de las partes del proceso te pareció muy tedioso o aburrido?
-- No me pareció nada aburrido pero lo que me tomo tiempo entender los hechizos de cada héroe
-7. ¿Qué  parte del proceso de selección de tu héroe consideras que fue de mucha ayuda?
-- Bueno , cuando escoges un personaje aparece un mapa de sus skills (habilidades)
-8. ¿Cuánto tiempo te tomó hacer la elección de tu campeón?
-demoró dentro de 5 a 10 min
-
-De esta entrevista realizada a la señorita Katherine obtuvimos nuestro primera historia de usuario :
+De esta entrevista realizada a la señorita Katherine Ormeño obtuvimos nuestras historias de usuario :
 
 - El usuario quiere que se le muestre los campeones más poderosos para así tener más probabilidad de ganar la partida.
 - El usuario quiere que se muestren todos los campeones existentes
-por rol para saber que campeón usar .
-- El usuario quiere visualizar los 10 mejores campeones de cada rol para escoger más rapido y tener más probabilidad de ganar.
-
+por rol para saber que campeón usar en determinado equipo de juego.
+- El usuario quiere visualizar los 10 mejores campeones de cada rol para escoger al más fuerte y tener más probabilidad de ganar.
 ---
-## Checklist
 
-* [ ] Usa VanillaJS.
-* [ ] No hace uso de `this`.
-* [ ] Pasa linter (`npm pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
+- Definir cual es la funcionalidad de la página.
+"WIKILOL" es una app web que permite al usuario de "LOL" informarse sobre las características de los personajes del juego,sus habilidades especificas y generales,seleccionar por roles , puesto que  muchos usuarios juegan en determinado rol, "WikiLol".
+ 
+En base a los requerimientos
+- Planificar el tablero canvas en base a las historia de usuario.
+![image](src\imagenes\canvas-historias.jpeg)
+
+
+## Sketch
+- Prototipo de Baja calidad
+![image](src\imagenes\numero1.jpeg)
+![image](src\imagenes\numero2.jpeg)
+![image](src\imagenes\numero3.jpeg)
+![image](src\imagenes\numero4.jpeg)
+## Diseño de Interfaz del Usuario
+- Prototipo de Alta calidad
+![image](src\imagenes\pagina1.JPG)
+![image](src\imagenes\pagina2.1.JPG)
+![image](src\imagenes\paginaDos.JPG)
+![image](src\imagenes\pagina3.JPG)
+![image](src\imagenes\pagina4.JPG)
+
+## Zeplin
+- Versión Escritorio 
+https://zpl.io/VOK5l6Y
+- Versión Celular 
+https://zpl.io/VOK5LMX
+## Problemas detectados en test usabilidad
+1. Barra de navegación lateral no debería mostrarse en el aside y en reemplazo se coloco un menu navegador en la parte superior de la página.
+2. Inicialmente se creó la función filtrar para mostrar los campeones segun su rol , pero el usuario comentó que cada campeón contaba con dos roles , lo cual nos llevo a modificar la función inicial para que se pueda filtrar los campeones con dos roles como mencionó el usuario.
+3. Las imágenes que se mostraban en pantalla eran muy pequeñas y los splash demasiado grandes , y eso hacía a la página poco llamativa.
+4. La función "Sort data " no funcionaba después de usar la función topTen.
+5. La función topTen no funcionaba después de usar la función " Sort Data ".
+6. Los elementos se cargaban con error por que "no existían" problemas del main.js
+7. Los modales no mostraban los calculos en la función Estadística.
+8. La información no se pintaba en los modales.
+9. Se mostraban más de 10 campeones en la ventana Top Ten
+10. No se podía regresar a la ventana top ten después de  estar en la ventana de Campeones.
+11. El usuario no entendía por que había una barra de navegación Horizontal central y uno lateral.
+
+
