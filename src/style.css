@@ -74,6 +74,11 @@
   width: 20px;
   height: 20px;
 }
+.img-class {
+  width: 250px;
+  height: 200px;
+  border-radius:5px;
+}
 /*Estilo de clase para nav*/
 .menu-nav {
   display: block;
@@ -476,7 +481,7 @@
 /* diseño de las tarjetas de lol */
 .blog-card{
   display: inline-table;
-  background: #F0CD65;
+  background: gray;
   box-shadow: 0rem 5rem 20rem 1.5rem rgba(0, 0, 2, 0.2);
   width: 180px;
   height: 250px;
