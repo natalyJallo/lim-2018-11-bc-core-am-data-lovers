@@ -4,7 +4,7 @@ const array = Object.values(LOL.data);
 const arrayKeys = Object.values(array[0]);
 const newArrayKeys = Object.keys(arrayKeys[12]);
 const newStats = Object.values(array);
-newStats;
+
 const conteinerChampions = document.getElementById('list-champions');
 const templateListChampions = (array) => {
   let championsList = [];

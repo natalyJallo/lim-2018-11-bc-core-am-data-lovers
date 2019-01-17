@@ -16,24 +16,13 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
 /*FONDOS DE PAGINAS*/
-.thirst-page {
+.page {
   width: 100%;
   height: 100%;
-}
-.second-page {
-  width: 100%;
-  height: 100%;
+}  
+.back-page {
   background-color: rgba(0, 0, 0, 0.904);
-}
-.first-page {
-  width: 100%;
-  height: 100%;
-} 
-.fourth-page {
-  width: 100%;
-  height: 100%;
 }
 /*ENCABEZADO DE LAS PAGINAS*/
 .first-header {
@@ -46,11 +35,7 @@
   background-size: cover;
 }
 .first-header2 {
-  width: 100%;
-  height: 200px;
   background: #252222;
-  text-align: center;
-  position: absolute;
   z-index: 2;
 }
 .logo1 {
@@ -959,5 +944,4 @@ letter-spacing: 1px;
     padding-top: 60px;
     padding: 8px;
   }
-
 }
