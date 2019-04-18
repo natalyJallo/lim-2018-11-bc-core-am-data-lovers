@@ -1,23 +1,35 @@
 // Funcion de tenplates para mi campeones
-/* global array, arrayKeys, newArrayKeys*/
-const array = Object.values(LOL.data);
-const arrayKeys = Object.values(array[0]);
-const newArrayKeys = Object.keys(arrayKeys[12]);
-const newStats = Object.values(array);
+fetch('https://raw.githubusercontent.com/Laboratoria/lim-2018-11-bc-core-am-data-lovers/master/src/data/lol/lol.json')
+  .then((res) => {
+    return res.json();
+  })
+  .then((dataOfChampions) => {
+    let arrayDataLOL = Object.values(dataOfChampions.data);
+    containerOfFunctions(arrayDataLOL);
+  })
+  .catch((error) => {
+    alert('Se ha producido un error' + error.messagge);
+  });
 
-const conteinerChampions = document.getElementById('list-champions');
-const templateListChampions = (array) => {
-  let championsList = [];
-  console.log(championsList);
-  let newchampionList = [];
-  conteinerChampions.value = '';
-  for (let i = 0; i < array.length; i++) 
-    championsList.push(Object.assign({}, array[i]));
+const containerOfFunctions = (array) => {
+  const arrayKeys = Object.values(array[0]);
+  const newArrayKeys = Object.keys(arrayKeys[12]);
+  const newStats = Object.values(array);
+  newStats;
 
-  for (let i = 0; i < championsList.length; i++) {
-    newchampionList.push(
+  const conteinerChampions = document.getElementById('list-champions');
+  const templateListChampions = (array) => {
+    let championsList = [];
+    console.log(championsList);
+    let newchampionList = [];
+    conteinerChampions.value = '';
+    for (let i = 0; i < array.length; i++)
+      championsList.push(Object.assign({}, array[i]));
 
-      `<div class='blog-card'>   
+    for (let i = 0; i < championsList.length; i++) {
+      newchampionList.push(
+
+        `<div class='blog-card'>   
             <a class='card' id='${championsList[i].id}' href='#modal${i}'>
             <img class='img-1'src='campeones/${(championsList[i].name).toLowerCase()}.png'><br>
             <div class='layer'>
@@ -31,7 +43,7 @@ const templateListChampions = (array) => {
             <div class='modal-champions' id='${championsList[i].id}'> 
             <a href='#' title='Close' class='modal-close'>X</a>
             <img class='img-modal'src='anima/${(championsList[i].name).toLowerCase()}.jpg'>
-            <h1 class='modal-text'><img class='img-modal2'src='imagenes/guerra.png'><br>${championsList[i].name}</h1>
+            <h1 class='modal-text'><img class='img-modal2'src='imagenes/guerra.PNG'><br>${championsList[i].name}</h1>
             <h3 class='modal-text2'>"${ championsList[i].title}"</h3>
             <p class='modal-text3'>${ championsList[i].blurb}<br>
             <br>Sus roles son: ${ championsList[i].tags}.</p>
@@ -88,37 +100,38 @@ const templateListChampions = (array) => {
             </table>
           </div>
         </section>`
-    );
-  }
-  conteinerChampions.innerHTML = newchampionList.join('');
-};
+      );
+    }
+    conteinerChampions.innerHTML = newchampionList.join('');
+  };
 
-templateListChampions(array);
+  templateListChampions(array);
 
-// filtrado
-const valuesCheckBox = document.getElementsByClassName('checkbox');
-const checkbox = Object.values(valuesCheckBox);
-const filter = (arrayTag) => {
-  let tagChoices = [];
-  arrayTag.forEach(tag => {
-    tag.addEventListener('change', () => {
-      if (tag.checked === true) {
-        tagChoices.push(tag.value);
-      } else {
-        let element = tagChoices.indexOf(tag.value);
-        tagChoices.splice(element, 1);
-        templateListChampions(array);
-      }
-      templateListChampions(window.lol.dataFilter(array, tagChoices));
+  // filtrado
+  const valuesCheckBox = document.getElementsByClassName('checkbox');
+  const checkbox = Object.values(valuesCheckBox);
+  const filter = (arrayTag) => {
+    let tagChoices = [];
+    arrayTag.forEach(tag => {
+      tag.addEventListener('change', () => {
+        if (tag.checked === true) {
+          tagChoices.push(tag.value);
+        } else {
+          let element = tagChoices.indexOf(tag.value);
+          tagChoices.splice(element, 1);
+          templateListChampions(array);
+        }
+        templateListChampions(window.lol.dataFilter(array, tagChoices));
+      });
     });
+  };
+
+  filter(checkbox);
+
+  // Funcion de ordenar data de ascendente y descente
+  const sortBy = document.getElementById('order-champions');
+  sortBy.addEventListener('change', () => {
+    const listenSortBy = sortBy.value;
+    templateListChampions(window.lol.sortData(array, listenSortBy));
   });
 };
-
-filter(checkbox);
-
-// Funcion de ordenar data de ascendente y descente
-const sortBy = document.getElementById('order-champions');
-sortBy.addEventListener('change', () => {
-  const listenSortBy = sortBy.value;
-  templateListChampions(window.lol.sortData(array, listenSortBy));
-});

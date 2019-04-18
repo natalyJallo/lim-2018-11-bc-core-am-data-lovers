@@ -224,7 +224,8 @@
   background-attachment: fixed;
   position: absolute;
   z-index: 1;
-  background-image: url('imagenes/runeterra-s.jpg')
+  background-image: url('imagenes/runeterra-s.jpg');
+  width: 100%;
 }
 .nav {
   background-color:rgba(17, 16, 16, 0.808);
@@ -614,7 +615,7 @@
   font-family: 'Reem Kufi', sans-serif;
   font-size: 13px;
   text-align: center;
-  width: 600px;
+  width: 600px;fblog-ca
   color: #FEFEFE;
   text-align: justify;
   float: right;
@@ -662,6 +663,10 @@ letter-spacing: 1px;
   text-align: left;
   padding-left: 10px;
 }
+.canvas1 {
+  width: 400px;
+  height: 200px;
+}
 
 /* menu responsive*/
 /*Estilo para la pantalla de celulares de 440px de ancho */
@@ -692,7 +697,7 @@ letter-spacing: 1px;
     display: block;
   }
   .menu-bar:checked ~ .menu-nav {
-    transform:  translateX(0%);
+    transform:  translateX(-0%);
   }
   .menu-li2 {
    display: block;

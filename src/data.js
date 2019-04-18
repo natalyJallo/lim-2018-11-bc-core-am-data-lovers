@@ -22,7 +22,7 @@ const sortData = (data, sortBy) => {
 
 // Funcion de de los 10 mejores campeones
 const getTopTen = (data) => {
-  const newArray = data.map(copyData => Object.assign({}, { name: copyData.name, attackdamage: copyData.stats.attackdamage, img: copyData.img }));
+  const newArray = data.map(copyData => Object.assign({}, { name: copyData.name, attackdamage: copyData.stats.attackdamage, img: copyData.img, movespeed: copyData.stats.movespeed, attackrange: copyData.stats.attackrange, attackdamageperlevel: copyData.stats.attackdamageperlevel, attack: copyData.info.attack, defense: copyData.info.defense, magic: copyData.info.magic, difficulty: copyData.info.difficulty}));
   let newArrayOrder = newArray.sort((higher, lessHiger) => {
     if (higher.attackdamage <= lessHiger.attackdamage) {
       return 1;
