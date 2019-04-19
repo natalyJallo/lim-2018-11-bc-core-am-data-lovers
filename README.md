@@ -21,13 +21,13 @@
 ## Definición del Producto
 Para definir cual sería la funcionalidad de la página seguimos los siguientes pasos :
 1.  Planificación
-- Organizar nuestro tablero canvas con las primeras actividades de la entrevista .
-![image](src\imagenes\tablero-canvas-start.jpg)
-2. Crear nuestro esquema de entrevista .
-![image](src\imagenes\boceto-entrevista.jpeg)
-3. Buscar usuarios que jueguen LOL .
-4. Entrevista al usuario .
-![image](src\anima\entrevista.PNG)
+    - Organizar nuestro tablero canvas con las primeras actividades de la entrevista.
+![image](\src\imagenes\tablero-canvas-start.jpg)
+2. Crear nuestro esquema de entrevista.
+![image](\src\imagenes\boceto-entrevista.jpeg)
+3. Buscar usuarios que jueguen LOL.
+4. Entrevista al usuario.
+![image](\src\anima\entrevista.PNG)
 
 5. Extraer las historia de usuario
 ## Historia de Usuario
@@ -44,26 +44,26 @@ por rol para saber que campeón usar en determinado equipo de juego.
  
 En base a los requerimientos
 - Planificar el tablero canvas en base a las historia de usuario.
-![image](src\imagenes\canvas-historias.jpeg)
+![image](\src\imagenes\canvas-historias.jpeg)
 
 
 ## Sketch
 - Prototipo de Baja calidad
-![image](src\imagenes\boceto-sketch.jpg)
+![image](\src\imagenes\boceto-sketch.jpg)
 
 ## Diseño de Interfaz del Usuario
 - Prototipo de Alta calidad
-![image](src\imagenes\pagina1.JPG)
-![image](src\imagenes\pagina2.1.JPG)
-![image](src\imagenes\paginaDos.JPG)
-![image](src\imagenes\pagina3.JPG)
-![image](src\imagenes\pagina4.JPG)
+![image](\src\imagenes\pagina1.JPG)
+![image](\src\imagenes\pagina2.1.JPG)
+![image](\src\imagenes\paginaDos.JPG)
+![image](\src\imagenes\pagina3.JPG)
+![image](\src\imagenes\pagina4.JPG)
 ## Zeplin
 - Versión Escritorio 
 https://zpl.io/VOK5l6Y
 - Versión Celular 
 https://zpl.io/VOK5LMX
 ## Problemas detectados en test
-![image](src\imagenes\test-error.PNG)
+![image](\src\imagenes\test-error.PNG)
 Entre otros problemas que encontramos en los test fueron la estructura de nuestros inputs o outputs , con un " console.log " a los parámetros se pudo solucionar en su mayoría además de incluir testear cada condicional para aumentar el porcentajes de líneas cubiertas.
 
